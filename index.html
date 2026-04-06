@@ -4,21 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aresh Tajvar</title>
+    <title>Aresh Tajvar | Portfolio</title>
     <meta name="description"
         content="Aresh Tajvar - Graduate student at University of San Diego pursuing a Master of Science in Applied Artificial Intelligence.">
 
-    <!-- Open Graph (OG) Tags for Social Previews -->
-    <meta property="og:title" content="Aresh Tajvar">
-    <meta property="og:description"
-        content="Graduate student at University of San Diego pursuing a Master of Science in Applied Artificial Intelligence.">
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://aretaj.github.io/">
-
-    <!-- Canonical link to ensure search engines recognize this as the authoritative source -->
-    <link rel="canonical" href="https://aretaj.github.io/">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="index.css">
+    <script src="translations.js"></script>
 
     <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
@@ -26,7 +18,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Aresh Tajvar",
-      "url": "https://aretaj.github.io/",
+      "url": "https://areshtajvar.com/",
       "alumniOf": [
         {
           "@type": "CollegeOrUniversity",
@@ -49,128 +41,159 @@
 </head>
 
 <body>
-    <header>
-        <img src="aresh-tajvar-profile.jpg" alt="Aresh Tajvar Profile Photo" class="profile-photo" width="150"
-            height="150">
-        <h1>Aresh Tajvar</h1>
-        <p>
-            <strong>MS in Applied Artificial Intelligence candidate at the
-                University of San Diego Shiley-Marcos School of Engineering. Trilingual AI practitioner
-                building data-driven solutions with expertise in Machine Learning, Deep Learning, and Quantitative
-                Analysis.</strong>
-        </p>
-        <nav aria-label="Professional Links">
-            <a href="https://linkedin.com/in/aresh-tajvar" target="_blank" rel="noopener noreferrer"
-                title="Aresh Tajvar LinkedIn Profile" aria-label="Visit Aresh Tajvar's LinkedIn Profile">LinkedIn</a>
-            <a href="https://github.com/AreTaj" target="_blank" rel="noopener noreferrer"
-                title="Aresh Tajvar GitHub Profile" aria-label="Visit Aresh Tajvar's GitHub Profile">GitHub</a>
-            <a href="https://www.researchgate.net/profile/Aresh-Tajvar" target="_blank" rel="noopener noreferrer"
-                title="Aresh Tajvar ResearchGate Profile"
-                aria-label="Visit Aresh Tajvar's ResearchGate Profile">ResearchGate</a>
-        </nav>
-    </header>
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3>San Diego Land Use RAG</h3>
-                    <p>In-progress MS degree capstone project. <a href="https://github.com/AreTaj/sd-land-use-rag"
-                            target="_blank" rel="noopener noreferrer" title="San Diego Land Use RAG GitHub Repository"
-                            aria-label="View San Diego Land Use RAG on GitHub">View on GitHub</a>.</p>
-                </article>
+    <div class="lang-switcher">
+        <button class="lang-btn" onclick="updateContent('en')" data-t="lang_en">EN</button>
+        <button class="lang-btn" onclick="updateContent('es')" data-t="lang_es">ES</button>
+    </div>
 
-                <article class="project-card">
-                    <h3>Migraine Navigator</h3>
-                    <p>AI/ML tracking and prediction using <strong>Gradient Boosting Decision Trees</strong> and
-                        <strong>Hurdle
-                            Models</strong>. <a href="https://github.com/AreTaj/Migraine-Navigator" target="_blank"
-                            rel="noopener noreferrer" title="Migraine Navigator GitHub Repository"
-                            aria-label="View Migraine Navigator on GitHub">View on GitHub</a> |
-                        <a href="https://aretaj.github.io/Migraine-Navigator/" target="_blank" rel="noopener noreferrer"
-                            title="Migraine Navigator Project Page"
-                            aria-label="View Project Page and Documentation of Migraine Navigator">Project Page</a>.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Eurosat TensorFlow</h3>
-                    <p>Land cover classification using <strong>Convolutional Neural Networks</strong>. <a
-                            href="https://github.com/AreTaj/eurosat-Tensorflow" target="_blank"
-                            rel="noopener noreferrer" title="Eurosat TensorFlow GitHub Repository"
-                            aria-label="View Eurosat TensorFlow on GitHub">View on
-                            GitHub</a>.</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Option Pricing</h3>
-                    <p>Stock option pricing using the <strong>Black-Scholes model</strong> and <strong>Tkinter</strong>.
-                        <a href="https://github.com/AreTaj/option-pricing" target="_blank" rel="noopener noreferrer"
-                            title="Option Pricing GitHub Repository" aria-label="View Option Pricing on GitHub">View on
-                            GitHub</a>.
-                    </p>
-                </article>
+    <div class="container">
+        <header>
+            <div class="profile-container">
+                <img src="aresh-tajvar-profile.jpg" alt="Aresh Tajvar Profile Photo" class="profile-photo">
             </div>
-        </section>
+            <h1 data-t="name">Aresh Tajvar</h1>
+            <p class="tagline" data-t="tagline">
+                MS in Applied Artificial Intelligence candidate at the
+                <strong>University of San Diego</strong>. Trilingual AI practitioner building data-driven solutions.
+            </p>
+            <nav class="social-nav" aria-label="Professional Links">
+                <a href="https://linkedin.com/in/aresh-tajvar" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/AreTaj" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+                    GitHub
+                </a>
+                <a href="https://www.researchgate.net/profile/Aresh-Tajvar" target="_blank" rel="noopener noreferrer" title="ResearchGate Profile">
+                    Research
+                </a>
+            </nav>
+        </header>
 
-        <section id="skills-certifications">
-            <h2>Skills & Certifications</h2>
+        <main>
+            <section id="projects">
+                <h2 data-t="projects_title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3 data-t="project_sd_title">San Diego Land Use RAG</h3>
+                        <p data-t="project_sd_desc">MS degree capstone project. In-progress system for intelligent legal and land-use document retrieval.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/AreTaj/sd-land-use-rag" target="_blank" rel="noopener noreferrer" data-t="view_on_github">View GitHub</a>
+                        </div>
+                    </article>
 
-            <div class="skills-category">
-                <h3>Technical</h3>
-                <h4>Languages</h4>
-                <ul class="skill-tags">
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>R</li>
-                    <li>Java</li>
-                </ul>
+                    <article class="project-card">
+                        <h3 data-t="project_migraine_title">Migraine Navigator</h3>
+                        <p data-t="project_migraine_desc">AI/ML tracking and prediction using GBDT and Hurdle Models.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/AreTaj/Migraine-Navigator" target="_blank" rel="noopener noreferrer" data-t="view_on_github">View GitHub</a>
+                            <a href="https://aretaj.github.io/Migraine-Navigator/" target="_blank" rel="noopener noreferrer" data-t="project_page">Project Page</a>
+                        </div>
+                    </article>
 
-                <h4>Libraries & Frameworks</h4>
-                <ul class="skill-tags">
-                    <li>TensorFlow</li>
-                    <li>PyTorch</li>
-                    <li>Pandas</li>
-                </ul>
+                    <article class="project-card">
+                        <h3 data-t="project_eurosat_title">Eurosat TensorFlow</h3>
+                        <p data-t="project_eurosat_desc">Land cover classification using Convolutional Neural Networks.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/AreTaj/eurosat-Tensorflow" target="_blank" rel="noopener noreferrer" data-t="view_on_github">View GitHub</a>
+                        </div>
+                    </article>
 
-                <h4>Cloud & Tools</h4>
-                <ul class="skill-tags">
-                    <li>AWS Sagemaker</li>
-                    <li>Google Cloud</li>
-                    <li>Power BI</li>
-                </ul>
-            </div>
+                    <article class="project-card">
+                        <h3 data-t="project_option_title">Option Pricing</h3>
+                        <p data-t="project_option_desc">Stock option pricing using the Black-Scholes model and Tkinter.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/AreTaj/option-pricing" target="_blank" rel="noopener noreferrer" data-t="view_on_github">View GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-            <div class="skills-category">
-                <h3>Professional</h3>
-                <ul class="skill-tags">
-                    <li>FINRA SIE</li>
-                    <li>FactSet Essentials</li>
-                    <li>Certified ScrumMaster</li>
-                </ul>
-            </div>
+            <section id="skills">
+                <h2 data-t="skills_title">Expertise</h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3 data-t="tech_skills">Technical Stack</h3>
+                        <ul class="skill-tags">
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>R</li>
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>Pandas</li>
+                            <li>AWS Sagemaker</li>
+                        </ul>
+                    </div>
 
-            <div class="skills-category">
-                <h3>Human Languages</h3>
-                <ul class="skill-tags">
-                    <li>English (Fluent)</li>
-                    <li>Spanish (Fluent)</li>
-                    <li>Persian/Farsi (Fluent)</li>
-                </ul>
-            </div>
+                    <div class="skills-category">
+                        <h3 data-t="professional_skills">Professional & Industry</h3>
+                        <ul class="skill-tags">
+                            <li>FINRA SIE</li>
+                            <li>FactSet Essentials</li>
+                            <li>Certified ScrumMaster</li>
+                            <li>Quantitative Analysis</li>
+                        </ul>
+                    </div>
 
-            <div class="skills-category">
-                <h3>Certifications</h3>
-                <ul class="cert-list">
-                    <li><strong>Harvard University:</strong> Computer Science for Python</li>
-                    <li><strong>Hugging Face:</strong> Fundamentals of Agents</li>
-                    <li><strong>AWS Educate:</strong> Machine Learning Foundations</li>
-                    <li><strong>FINRA:</strong> Securities Industry Essentials (SIE)</li>
-                    <li><strong>FactSet:</strong> Essentials - Portfolio Analysis</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+                    <div class="skills-category">
+                        <h3 data-t="human_languages">Human Languages</h3>
+                        <ul class="skill-tags">
+                            <li>English</li>
+                            <li>Spanish</li>
+                            <li>Persian/Farsi</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2 data-t="certs_title">Certifications</h2>
+                <div class="cert-list">
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <strong data-t="cert_harvard">Computer Science for Python</strong>
+                            <span data-t="org_harvard">Harvard University</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <strong data-t="cert_hf">Fundamentals of Agents</strong>
+                            <span data-t="org_hf">Hugging Face</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <strong data-t="cert_aws">Machine Learning Foundations</strong>
+                            <span data-t="org_aws">AWS Educate</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <strong data-t="cert_finra">Securities Industry Essentials (SIE)</strong>
+                            <span data-t="org_finra">FINRA</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <strong data-t="cert_factset">Portfolio Analysis</strong>
+                            <span data-t="org_factset">FactSet</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p data-t="footer">© 2026 Aresh Tajvar</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set specific alignment rules if the lang switcher logic needs more than the CSS
+        window.addEventListener('load', () => {
+             const savedLang = localStorage.getItem('preferredLang') || 'en';
+             updateContent(savedLang);
+        });
+    </script>
 </body>
 
 </html>
