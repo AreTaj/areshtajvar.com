@@ -51,7 +51,7 @@ const translations = {
 
         // Certs
         certs_title: "Certifications",
-        cert_harvard: "Computer Science for Python",
+        cert_harvard: "Professional Certificate in Computer Science for Python Programming",
         cert_hf: "Fundamentals of Agents",
         cert_aws: "Machine Learning Foundations",
         cert_finra: "Securities Industry Essentials (SIE)",
@@ -82,8 +82,8 @@ const translations = {
         desc_aws: "Advanced cloud machine learning platform for building, training, and deploying models.",
         desc_quant: "Applying mathematical and statistical methods to financial and risk management problems.",
         desc_en: "Native proficiency in written and spoken English.",
-        desc_es: "Advanced proficiency in written and spoken Spanish.",
-        desc_fa: "Native proficiency in spoken Persian (Farsi).",
+        desc_es: "Native-level proficiency in written and spoken Spanish.",
+        desc_fa: "Native verbal fluency in Persian (Farsi) with functional literacy.",
         desc_harvard: "Comprehensive introduction to computer science, algorithms, and Python programming.",
         desc_hf: "Practical application and architecture of open-source AI Agents and LLM workflows.",
         desc_aws_cert: "Core principles of machine learning operations and cloud deployment on AWS.",
@@ -170,14 +170,14 @@ const translations = {
         desc_python: "Lenguaje versátil utilizado extensamente para ciencia de datos, IA avanzada y lógica de sistemas.",
         desc_sql: "Lenguaje especializado para la gestión y consulta eficiente de bases de datos estructuradas.",
         desc_r: "Lenguaje enfocado al análisis estadístico riguroso y la modelización gráfica de datos.",
-        desc_tf: "Plataforma líder de código abierto para construir y desplegar modelos robustos de ML.",
+        desc_tf: "Plataforma avanzada de código abierto de Google para construir e implementar modelos de aprendizaje automático.",
         desc_pytorch: "Framework de aprendizaje profundo flexible, estándar en visión artificial y modelos de NLP.",
         desc_pandas: "Librería de Python esencial para la manipulación avanzada y limpieza de estructuras de datos.",
-        desc_aws: "Plataforma líder en la nube para el entrenamiento y despliegue escalable de modelos de ML.",
+        desc_aws: "Plataforma avanzada de aprendizaje automático en la nube para el entrenamiento y despliegue escalable de modelos de ML.",
         desc_quant: "Aplicación de métodos matemáticos y estadísticos avanzados a problemas de finanzas y gestión de riesgos.",
         desc_en: "Competencia nativa en inglés escrito y hablado.",
-        desc_es: "Competencia avanzada en español escrito y hablado.",
-        desc_fa: "Competencia nativa en persa hablado (farsi).",
+        desc_es: "Dominio de nivel nativo en español escrito y hablado.",
+        desc_fa: "Fluidez nativa verbal en persa (farsi) con dominio funcional de lectura y escritura.",
         desc_harvard: "Introducción exhaustiva a ciencias de la computación, algoritmos y programación avanzada en Python.",
         desc_hf: "Arquitectura y aplicación práctica de agentes de IA código abierto y flujos de trabajo con LLMs.",
         desc_aws_cert: "Principios fundamentales de operaciones de ML (MLOps) y despliegue en infraestructuras de nube.",
@@ -259,30 +259,30 @@ document.addEventListener('DOMContentLoaded', () => {
     function showTooltip(trigger) {
         const key = trigger.getAttribute('data-t-desc');
         const lang = localStorage.getItem('preferredLang') || 'en';
-        
+
         if (translations[lang] && translations[lang][key]) {
             tooltip.innerHTML = translations[lang][key];
             tooltip.classList.add('visible');
-            
+
             // Calculate Position
             const rect = trigger.getBoundingClientRect();
-            
+
             // Default position above
             let topPosition = rect.top + window.scrollY - tooltip.offsetHeight - 12;
             let leftPosition = rect.left + window.scrollX + (rect.width / 2) - (tooltip.offsetWidth / 2);
-            
+
             // If it hits the top viewport edge, show below
             if (topPosition < window.scrollY + 10) {
                 topPosition = rect.bottom + window.scrollY + 12;
             }
-            
+
             // Screen edge padding
             const padding = 15;
             const maxLeft = window.innerWidth - tooltip.offsetWidth - padding;
-            
+
             if (leftPosition < padding) leftPosition = padding;
             if (leftPosition > maxLeft) leftPosition = maxLeft;
-            
+
             tooltip.style.top = topPosition + 'px';
             tooltip.style.left = leftPosition + 'px';
         }
