@@ -60,19 +60,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.9rem 2rem;
+    padding: 0.7rem 2rem;
     background: rgba(5, 7, 10, 0.8);
     backdrop-filter: blur(var(--glass-blur));
     border-bottom: 1px solid var(--border);
 }
 
 .nav-logo {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: var(--text-primary);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    letter-spacing: -0.02em;
+}
+
+.nav-logo img {
+    height: 2.6rem;
+    width: auto;
 }
 
 .nav-links {
