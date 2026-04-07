@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroSat TensorFlow | Aresh Tajvar</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html" class="nav-logo">AT</a>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="page-container fade-in visible">
+        <a href="index.html#projects" class="back-link">← Back to Portfolio</a>
+        
+        <header class="page-header">
+            <div class="project-tags">
+                <span>Computer Vision</span>
+                <span>Deep Learning</span>
+            </div>
+            <h1>EuroSat TensorFlow</h1>
+            <p class="subtitle">Land cover classification from satellite imagery using Convolutional Neural Networks.</p>
+        </header>
+
+        <article class="page-content">
+            <section>
+                <h2>Context & Problem</h2>
+                <p>Monitoring land cover changes — such as urban sprawl, deforestation, and agricultural health — is historically manual and expensive. The introduction of the EuroSat dataset (based on Sentinel-2 satellite images) established a benchmark for automating this process via machine learning.</p>
+                <p>The core challenge is building a computer vision model that can accurately distinguish between visually similar terrain categories (e.g., permanent crops vs. pastures) across thousands of satellite tiles.</p>
+            </section>
+
+            <section>
+                <h2>Architecture & Approach</h2>
+                <p>I built an end-to-end computer vision pipeline using <strong>TensorFlow</strong> and <strong>Keras</strong> to ingest, process, and classify the image dataset into 10 distinct land-use categories.</p>
+                <p>The architecture relies on custom <strong>Convolutional Neural Networks (CNNs)</strong>. To prevent the model from overfitting to specific geographic artifacts in the training data, I implemented robust regularization techniques, including aggressive dropout layers and dynamic learning rate adjustments.</p>
+            </section>
+
+            <section>
+                <h2>Key Results</h2>
+                <ul>
+                    <li>Successfully engineered a scalable multi-class image classification model.</li>
+                    <li>Utilized data augmentation to artificially expand the training set, improving the model's ability to generalize to novel satellite imagery.</li>
+                    <li>Demonstrated proficiency in deep learning lifecycle management, from tensor preprocessing to model evaluation.</li>
+                </ul>
+            </section>
+
+            <div class="page-cta">
+                <a href="https://github.com/AreTaj/eurosat-Tensorflow" target="_blank" rel="noopener noreferrer" class="btn-primary">View Code on GitHub</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2026 Aresh Tajvar</p>
+    </footer>
+</body>
+</html>

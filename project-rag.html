@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Land Use RAG | Aresh Tajvar</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="translations.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html" class="nav-logo">AT</a>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <!-- Translations for subpages not yet populated, button hidden or kept for consistency -->
+        </div>
+    </nav>
+
+    <main class="page-container fade-in visible">
+        <a href="index.html#projects" class="back-link">← Back to Portfolio</a>
+        
+        <header class="page-header">
+            <div class="project-tags">
+                <span>NLP</span>
+                <span>Information Retrieval</span>
+            </div>
+            <h1>San Diego Land Use RAG</h1>
+            <p class="subtitle">Domain-adapted transformer pipeline for intelligent legal document retrieval and generation.</p>
+        </header>
+
+        <article class="page-content">
+            <section>
+                <h2>Context & Problem</h2>
+                <p>Municipal land-use documents and zoning laws are notoriously dense and challenging to parse. When citizens or paralegals interact with standard text-retrieval systems or generic LLMs, the models frequently hallucinate or fail to pull the exact municipal codes required for compliance.</p>
+                <p>As part of my Master's capstone project, I am building an intelligent retrieval system tailored specifically for San Diego land-use regulations that enforces high precision and factual grounding.</p>
+            </section>
+
+            <section>
+                <h2>Architecture & Approach</h2>
+                <p>To ensure the system retrieves accurate legal phrasing, I bypassed standard embedding models and rigorously benchmarked a domain-adapted <strong>Legal-BERT</strong> model against the baseline <strong>MiniLM</strong> architecture.</p>
+                <p>Because real-world user queries for zoning laws are complex and multi-faceted, I engineered a synthetic 50-query "Ground Truth" dataset using Gemini 2.0 Flash, built directly from legal document chunks. This dataset anchors the evaluation pipeline.</p>
+                <p>To validate the generation phase, the pipeline assesses outputs using a multi-metric approach: <strong>ROUGE-L</strong> for structural similarity, <strong>BERTScore</strong> for semantic similarity, and a strict <strong>LLM-as-a-judge faithfulness scoring</strong> mechanism to completely penalize hallucinations.</p>
+            </section>
+
+            <section>
+                <h2>Key Results</h2>
+                <ul>
+                    <li>Outperformed baseline architectures in both Mean Reciprocal Rank (MRR) and Hit Rate precision.</li>
+                    <li>Quantifiably mitigated hallucination rates through the implementation of a strict faithfulness evaluation pipeline.</li>
+                    <li><em>Final capstone deployment and end-to-end user evaluation in progress.</em></li>
+                </ul>
+            </section>
+
+            <div class="page-cta">
+                <a href="https://github.com/AreTaj/sd-land-use-rag" target="_blank" rel="noopener noreferrer" class="btn-primary">View Code on GitHub</a>
+                <a href="#" class="btn-secondary" onclick="alert('Live demo is currently in development. Check back soon!'); return false;">View Live Demo</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2026 Aresh Tajvar</p>
+    </footer>
+</body>
+</html>
