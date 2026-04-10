@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EuroSat TensorFlow | Aresh Tajvar</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <script src="../assets/js/translations.js"></script>
 </head>
 <body>
     <nav class="main-nav">
-        <a href="index.html" class="nav-logo"><img src="logo.png" alt="Aresh Tajvar Logo"></a>
+        <a href="../index.html" class="nav-logo"><img src="../assets/img/logo.png" alt="Aresh Tajvar Logo"></a>
         <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="index.html#contact">Contact</a>
+            <a href="../index.html#about" data-t="nav_about">About</a>
+            <a href="../index.html#projects" data-t="nav_projects">Projects</a>
+            <a href="../index.html#contact" data-t="nav_contact">Contact</a>
         </div>
+        <div class="nav-actions">
+            <button class="lang-btn" onclick="updateContent('en')" data-lang="en">EN</button>
+            <button class="lang-btn" onclick="updateContent('es')" data-lang="es">ES</button>
+        </div>
+        <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <main class="page-container fade-in visible">
-        <a href="index.html#projects" class="back-link">← Back to Portfolio</a>
+        <a href="../index.html#projects" class="back-link">← Back to Portfolio</a>
         
         <header class="page-header">
             <div class="project-tags">
@@ -58,7 +68,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Aresh Tajvar</p>
+        <p data-t="footer">© 2026 Aresh Tajvar</p>
     </footer>
 </body>
 </html>

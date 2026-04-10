@@ -47,6 +47,7 @@ const translations = {
         skills_title: "Expertise",
         tech_skills: "Technical Stack",
         professional_skills: "Professional & Industry",
+        skill_cost_mgmt: "Cost & Schedule Management",
         human_languages: "Languages",
 
         // Certs
@@ -81,6 +82,7 @@ const translations = {
         desc_pandas: "Python library focused on data manipulation, cleaning, and tabular data analysis.",
         desc_aws: "Advanced cloud machine learning platform for building, training, and deploying models.",
         desc_quant: "Applying mathematical and statistical methods to financial and risk management problems.",
+        desc_cost_mgmt: "Managing project budgets, forecasting, and timeline optimization to ensure efficient resource allocation and delivery.",
         desc_en: "Native proficiency in written and spoken English.",
         desc_es: "Native-level proficiency in written and spoken Spanish.",
         desc_fa: "Native verbal fluency in Persian (Farsi) with functional literacy.",
@@ -91,8 +93,23 @@ const translations = {
         desc_factset: "Advanced proficiency in financial data analytics, equity research, and portfolio modeling.",
         desc_scrum: "Certified agile project management focusing on iterative delivery and team coordination.",
 
-        footer: "© 2026 Aresh Tajvar"
-    },
+        footer: "© 2026 Aresh Tajvar",
+ 
+        // Subpages
+        context_title: "Context & Problem",
+        approach_title: "Architecture & Approach",
+        results_title: "Key Results",
+        view_github: "View Code on GitHub",
+        view_live: "View Live Project",
+        project_migraine_tag_2: "Machine Learning",
+        migraine_p1: "Standard pain reporting scales are highly subjective, making chronic condition tracking unreliable over the long term. A patient's self-reported \"5 out of 10\" pain level may not represent the same physiological experience from one year to the next.",
+        migraine_p2: "Additionally, health tracking systems often ask for input when the user is actively experiencing symptoms (like a migraine), leading to high abandonment rates if the interface causes cognitive load or visual strain.",
+        migraine_p3: "On the modeling side, I implemented a backend system utilizing <strong>Gradient Boosting Decision Trees (GBDT)</strong> and <strong>Hurdle Models</strong>. By separating the problem into two probabilistic stages — whether an event will occur, and if so, how severe it will be — the model mirrors true clinical outcomes.",
+        migraine_p4: "On the frontend, I engineered an accessible, low-friction UI specifically designed for users experiencing neurological discomfort. The interface relies on tap-based inputs like symptom pill buttons and segmented controls, minimizing typing. I also implemented <em>usage-based smart sorting</em> to dynamically elevate the user's most frequent triggers and medications to the top of the interface.",
+        migraine_r1: "Created an accessible, separation-of-concerns architecture for the frontend, passing 100% of UI threshold tests.",
+        migraine_r2: "Reduced cognitive load for active users through intelligent, personalized sorting algorithms.",
+        migraine_r3: "Developed an analytical model that systematically accounts for longitudinal data drift and the subjectivity inherent in self-reported pain scores."
+     },
     es: {
         // Nav
         nav_about: "Sobre mí",
@@ -141,6 +158,7 @@ const translations = {
         skills_title: "Especialización",
         tech_skills: "Conocimientos Técnicos",
         professional_skills: "Habilidades Profesionales",
+        skill_cost_mgmt: "Gestión de Costes y Cronogramas",
         human_languages: "Idiomas",
 
         // Certs
@@ -175,6 +193,7 @@ const translations = {
         desc_pandas: "Librería de Python esencial para la manipulación avanzada y limpieza de estructuras de datos.",
         desc_aws: "Plataforma avanzada de aprendizaje automático en la nube para el entrenamiento y despliegue escalable de modelos de ML.",
         desc_quant: "Aplicación de métodos matemáticos y estadísticos avanzados a problemas de finanzas y gestión de riesgos.",
+        desc_cost_mgmt: "Gestión de presupuestos, previsiones y optimización de plazos para asegurar una asignación eficiente de recursos y el cumplimiento de objetivos.",
         desc_en: "Competencia nativa en inglés escrito y hablado.",
         desc_es: "Dominio de nivel nativo en español escrito y hablado.",
         desc_fa: "Fluidez nativa verbal en persa (farsi) con dominio funcional de lectura y escritura.",
@@ -185,7 +204,22 @@ const translations = {
         desc_factset: "Dominio avanzado de analítica de datos financieros, investigación de renta variable y modelización de carteras.",
         desc_scrum: "Gestión ágil certificada enfocada en la entrega iterativa de valor y coordinación técnica de equipos.",
 
-        footer: "© 2026 Aresh Tajvar"
+        footer: "© 2026 Aresh Tajvar",
+
+        // Subpages
+        context_title: "Contexto y Problema",
+        approach_title: "Arquitectura y Enfoque",
+        results_title: "Resultados Clave",
+        view_github: "Ver Código en GitHub",
+        view_live: "Ver Proyecto en Vivo",
+        project_migraine_tag_2: "Machine Learning",
+        migraine_p1: "Las escalas estándar para reportar el dolor son altamente subjetivas, lo que hace que el seguimiento de condiciones crónicas sea poco fiable a largo plazo. El nivel de dolor autoinformado de '5 sobre 10' de un paciente puede no representar la misma experiencia fisiológica de un año para otro.",
+        migraine_p2: "Además, los sistemas de seguimiento de salud a menudo solicitan información cuando el usuario está experimentando síntomas activamente (como una migraña), lo que conduce a altas tasas de abandono si la interfaz causa carga cognitiva o fatiga visual.",
+        migraine_p3: "Desde el lado del modelado, implementé un sistema backend utilizando <strong>Gradient Boosting Decision Trees (GBDT)</strong> y <strong>Modelos Hurdle</strong>. Al separar el problema en dos etapas probabilísticas (si ocurrirá un evento y, de ser así, qué tan severo será), el modelo refleja resultados clínicos reales.",
+        migraine_p4: "Desde el lado del frontend, diseñé una interfaz de usuario accesible y de baja fricción, creada específicamente para usuarios que experimentan malestar neurológico. La interfaz se basa en entradas táctiles, como botones tipo píldora para síntomas y controles segmentados, minimizando el uso del teclado. También implementé un <em>ordenamiento inteligente basado en el uso</em> para elevar dinámicamente los desencadenantes y medicamentos más frecuentes del usuario a la parte superior de la interfaz.",
+        migraine_r1: "Se creó una arquitectura accesible con separación de responsabilidades para el frontend, superando el 100% de las pruebas de umbral de UI.",
+        migraine_r2: "Se redujo la carga cognitiva para los usuarios activos mediante algoritmos inteligentes de ordenación personalizada.",
+        migraine_r3: "Se desarrolló un modelo analítico que contabiliza sistemáticamente el desplazamiento longitudinal de datos y la subjetividad inherente a las puntuaciones de dolor autoinformadas."
     }
 };
 
