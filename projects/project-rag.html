@@ -62,9 +62,15 @@
                 </ul>
             </section>
 
-            <div class="page-cta">
-                <a href="https://github.com/AreTaj/sd-land-use-rag" target="_blank" rel="noopener noreferrer" class="btn-primary">View Code on GitHub</a>
-                <a href="#" class="btn-secondary" onclick="alert('Live demo is currently in development. Check back soon!'); return false;">View Live Demo</a>
+            <div class="demo-notice" style="background-color: var(--bg-accent); padding: 1rem 1.5rem; border-radius: 10px; margin-top: 2.5rem; border-left: 4px solid var(--accent);">
+                <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;" data-t="rag_demo_note">
+                    <strong style="color: var(--text-primary);">Note:</strong> This live demonstrator is hosted on a free Hugging Face server. If the app is "sleeping," please click <strong>Restart Space</strong> and allow 1-2 minutes for the database to boot.
+                </p>
+            </div>
+
+            <div class="page-cta" style="margin-top: 1.5rem;">
+                <a href="https://github.com/AreTaj/sd-land-use-rag" target="_blank" rel="noopener noreferrer" class="btn-primary" data-t="view_github">View Code on GitHub</a>
+                <a href="https://huggingface.co/spaces/AreTaj/sd-land-use-explorer" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-t="launch_demo">Launch Demonstrator</a>
             </div>
         </article>
     </main>

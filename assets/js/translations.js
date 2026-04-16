@@ -94,13 +94,15 @@ const translations = {
         desc_scrum: "Certified agile project management focusing on iterative delivery and team coordination.",
 
         footer: "© 2026 Aresh Tajvar",
- 
+
         // Subpages
         context_title: "Context & Problem",
         approach_title: "Architecture & Approach",
         results_title: "Key Results",
         view_github: "View Code on GitHub",
         view_live: "View Live Project",
+        launch_demo: "Launch Demonstrator",
+        rag_demo_note: '<strong style="color: var(--text-primary);">Note:</strong> This live demonstrator is hosted on a free Hugging Face server. If the app is "sleeping," please click <strong>Restart Space</strong> and allow 1-2 minutes for the database to boot.',
         project_migraine_tag_2: "Machine Learning",
         migraine_p1: "Standard pain reporting scales are highly subjective, making chronic condition tracking unreliable over the long term. A patient's self-reported \"5 out of 10\" pain level may not represent the same physiological experience from one year to the next.",
         migraine_p2: "Additionally, health tracking systems often ask for input when the user is actively experiencing symptoms (like a migraine), leading to high abandonment rates if the interface causes cognitive load or visual strain.",
@@ -109,7 +111,7 @@ const translations = {
         migraine_r1: "Created an accessible, separation-of-concerns architecture for the frontend, passing 100% of UI threshold tests.",
         migraine_r2: "Reduced cognitive load for active users through intelligent, personalized sorting algorithms.",
         migraine_r3: "Developed an analytical model that systematically accounts for longitudinal data drift and the subjectivity inherent in self-reported pain scores."
-     },
+    },
     es: {
         // Nav
         nav_about: "Sobre mí",
@@ -212,6 +214,8 @@ const translations = {
         results_title: "Resultados Clave",
         view_github: "Ver Código en GitHub",
         view_live: "Ver Proyecto en Vivo",
+        launch_demo: "Lanzar Demostrador",
+        rag_demo_note: '<strong style="color: var(--text-primary);">Aviso:</strong> Este demostrador en vivo está alojado en un servidor gratuito de Hugging Face. Si la aplicación entra en "reposo" (sleeping), haz clic en <strong>Restart Space</strong> y espera 1-2 minutos para que la base de datos se inicie.',
         project_migraine_tag_2: "Machine Learning",
         migraine_p1: "Las escalas estándar para reportar el dolor son altamente subjetivas, lo que hace que el seguimiento de condiciones crónicas sea poco fiable a largo plazo. El nivel de dolor autoinformado de '5 sobre 10' de un paciente puede no representar la misma experiencia fisiológica de un año para otro.",
         migraine_p2: "Además, los sistemas de seguimiento de salud a menudo solicitan información cuando el usuario está experimentando síntomas activamente (como una migraña), lo que conduce a altas tasas de abandono si la interfaz causa carga cognitiva o fatiga visual.",
