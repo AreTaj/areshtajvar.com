@@ -28,40 +28,40 @@
     </nav>
 
     <main class="page-container fade-in visible">
-        <a href="../index.html#projects" class="back-link">← Back to Portfolio</a>
+        <a href="../index.html#projects" class="back-link" data-t="back_portfolio">← Back to Portfolio</a>
         
         <header class="page-header">
             <div class="project-tags">
-                <span>Computational Finance</span>
-                <span>Quantitative Analysis</span>
+                <span data-t="opt_tag1">Computational Finance</span>
+                <span data-t="opt_tag2">Quantitative Analysis</span>
             </div>
-            <h1>Option Pricing Engine</h1>
-            <p class="subtitle">Black-Scholes option pricing model with an interactive graphical interface.</p>
+            <h1 data-t="opt_title">Option Pricing Engine</h1>
+            <p class="subtitle" data-t="opt_subtitle">Black-Scholes option pricing model with an interactive graphical interface.</p>
         </header>
 
         <article class="page-content">
             <section>
-                <h2>Context & Problem</h2>
-                <p>Deriving the theoretical value of a stock option requires complex stochastic calculus. While the Black-Scholes-Merton model provides the mathematical standard, the non-linear variables—especially the impact of implied volatility (Vega) and time decay (Theta)—are difficult to visualize without dedicated quantitative tools.</p>
+                <h2 data-t="context_title">Context & Problem</h2>
+                <p data-t="opt_p1">Deriving the theoretical value of a stock option requires complex stochastic calculus. While the Black-Scholes-Merton model provides the mathematical standard, the non-linear variables—especially the impact of implied volatility (Vega) and time decay (Theta)—are difficult to visualize without dedicated quantitative tools.</p>
             </section>
 
             <section>
-                <h2>Architecture & Approach</h2>
-                <p>I developed a localized financial application using <strong>Python</strong> that executes the Black-Scholes formula natively. Because computational finance tools are only as useful as they are accessible, I built a lightweight graphical user interface (GUI) using <strong>Tkinter</strong> to wrap the quantitative logic.</p>
-                <p>The application takes in real-time user parameters (underlying asset price, strike price, time to expiration, risk-free interest rate, and volatility) and immediately computes the theoretical price for both European Call and Put options.</p>
+                <h2 data-t="approach_title">Architecture & Approach</h2>
+                <p data-t="opt_p2">I developed a localized financial application using <strong>Python</strong> that executes the Black-Scholes formula natively. Because computational finance tools are only as useful as they are accessible, I built a lightweight graphical user interface (GUI) using <strong>Tkinter</strong> to wrap the quantitative logic.</p>
+                <p data-t="opt_p3">The application takes in real-time user parameters (underlying asset price, strike price, time to expiration, risk-free interest rate, and volatility) and immediately computes the theoretical price for both European Call and Put options.</p>
             </section>
 
             <section>
-                <h2>Key Results</h2>
+                <h2 data-t="results_title">Key Results</h2>
                 <ul>
-                    <li>Programmed the foundational stochastic partial differential equation into an optimized Python pipeline.</li>
-                    <li>Bridged the gap between raw quantitative mathematics and actionable trading insights via an interactive local dashboard.</li>
-                    <li>Demonstrated the ability to translate complex financial logic (useful for my FactSet and FINRA background) into functional software.</li>
+                    <li data-t="opt_r1">Programmed the foundational stochastic partial differential equation into an optimized Python pipeline.</li>
+                    <li data-t="opt_r2">Bridged the gap between raw quantitative mathematics and actionable trading insights via an interactive local dashboard.</li>
+                    <li data-t="opt_r3">Demonstrated the ability to translate complex financial logic (useful for my FactSet and FINRA background) into functional software.</li>
                 </ul>
             </section>
 
             <div class="page-cta">
-                <a href="https://github.com/AreTaj/option-pricing" target="_blank" rel="noopener noreferrer" class="btn-primary">View Code on GitHub</a>
+                <a href="https://github.com/AreTaj/option-pricing" target="_blank" rel="noopener noreferrer" class="btn-primary" data-t="view_github">View Code on GitHub</a>
             </div>
         </article>
     </main>

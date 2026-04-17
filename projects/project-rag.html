@@ -28,49 +28,52 @@
     </nav>
 
     <main class="page-container fade-in visible">
-        <a href="../index.html#projects" class="back-link">← Back to Portfolio</a>
+        <a href="../index.html#projects" class="back-link" data-t="back_portfolio">← Back to Portfolio</a>
         
-        <header class="page-header">
+        <header class="page-header" style="margin-bottom: 1.5rem;">
             <div class="project-tags">
                 <span>NLP</span>
-                <span>Information Retrieval</span>
+                <span data-t="rag_tag2">Information Retrieval</span>
             </div>
-            <h1>San Diego Land Use RAG</h1>
-            <p class="subtitle">Domain-adapted transformer pipeline for intelligent legal document retrieval and generation.</p>
+            <h1 data-t="project_sd_title">San Diego Land Use RAG</h1>
+            <p class="subtitle" data-t="project_sd_desc">Domain-adapted transformer pipeline for intelligent legal document retrieval and generation.</p>
         </header>
 
-        <article class="page-content">
+        <section class="demo-section" style="padding: 0; margin-bottom: 2rem;">
+            <h2 data-t="launch_demo" style="margin-bottom: 1.5rem;">Interactive Demo</h2>
+            <div class="demo-embed-container" style="height: auto; max-height: none; padding: 3rem 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: var(--bg-accent); border: 1px solid var(--border); border-radius: var(--radius);">
+                <img src="../assets/img/logo.png" alt="Aresh Tajvar Logo" style="width: 60px; margin-bottom: 1.5rem; filter: grayscale(1);">
+                <h3 style="font-family: var(--font-primary); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">San Diego Land Use Explorer</h3>
+                <p style="color: var(--text-secondary); max-width: 550px; margin-bottom: 2rem; font-size: 0.95rem;" data-t="rag_demo_note"><strong style="color: var(--text-primary);">Note:</strong> This live demonstrator is hosted on a free Hugging Face server. If the app is "sleeping," please click <strong>Restart Space</strong> and allow 1-2 minutes for the database to boot.</p>
+                <a href="https://aretaj-sd-land-use-explorer.hf.space" target="_blank" rel="noopener noreferrer" class="btn-primary" data-t="launch_app" style="text-decoration: none; padding: 0.85rem 2rem; border-radius: 12px; font-weight: 600; font-size: 1rem; background: var(--accent); color: var(--bg-dark); transition: transform 0.2s;">Launch Application ↗</a>
+            </div>
+        </section>
+
+        <article class="page-content" style="margin-top: 1rem;">
             <section>
-                <h2>Context & Problem</h2>
-                <p>Municipal land-use documents and zoning laws are notoriously dense and challenging to parse. When citizens or paralegals interact with standard text-retrieval systems or generic LLMs, the models frequently hallucinate or fail to pull the exact municipal codes required for compliance.</p>
-                <p>As part of my Master's capstone project, I am building an intelligent retrieval system tailored specifically for San Diego land-use regulations that enforces high precision and factual grounding.</p>
+                <h2 data-t="context_title">Context & Problem</h2>
+                <p data-t="rag_p1">Municipal land-use documents and zoning laws are notoriously dense and challenging to parse. When citizens or paralegals interact with standard text-retrieval systems or generic LLMs, the models frequently hallucinate or fail to pull the exact municipal codes required for compliance.</p>
+                <p data-t="rag_p2">As part of my Master's capstone project, I am building an intelligent retrieval system tailored specifically for San Diego land-use regulations that enforces high precision and factual grounding.</p>
             </section>
 
             <section>
-                <h2>Architecture & Approach</h2>
-                <p>To ensure the system retrieves accurate legal phrasing, I bypassed standard embedding models and rigorously benchmarked a domain-adapted <strong>Legal-BERT</strong> model against the baseline <strong>MiniLM</strong> architecture.</p>
-                <p>Because real-world user queries for zoning laws are complex and multi-faceted, I engineered a synthetic 50-query "Ground Truth" dataset using Gemini 2.0 Flash, built directly from legal document chunks. This dataset anchors the evaluation pipeline.</p>
-                <p>To validate the generation phase, the pipeline assesses outputs using a multi-metric approach: <strong>ROUGE-L</strong> for structural similarity, <strong>BERTScore</strong> for semantic similarity, and a strict <strong>LLM-as-a-judge faithfulness scoring</strong> mechanism to completely penalize hallucinations.</p>
+                <h2 data-t="approach_title">Architecture & Approach</h2>
+                <p data-t="rag_p3">To ensure the system retrieves accurate legal phrasing, I bypassed standard embedding models and rigorously benchmarked a domain-adapted <strong>Legal-BERT</strong> model against the baseline <strong>MiniLM</strong> architecture.</p>
+                <p data-t="rag_p4">Because real-world user queries for zoning laws are complex and multi-faceted, I engineered a synthetic 50-query "Ground Truth" dataset using Gemini 2.0 Flash, built directly from legal document chunks. This dataset anchors the evaluation pipeline.</p>
+                <p data-t="rag_p5">To validate the generation phase, the pipeline assesses outputs using a multi-metric approach: <strong>ROUGE-L</strong> for structural similarity, <strong>BERTScore</strong> for semantic similarity, and a strict <strong>LLM-as-a-judge faithfulness scoring</strong> mechanism to completely penalize hallucinations.</p>
             </section>
 
             <section>
-                <h2>Key Results</h2>
+                <h2 data-t="results_title">Key Results</h2>
                 <ul>
-                    <li>Outperformed baseline architectures in both Mean Reciprocal Rank (MRR) and Hit Rate precision.</li>
-                    <li>Quantifiably mitigated hallucination rates through the implementation of a strict faithfulness evaluation pipeline.</li>
-                    <li><em>Final capstone deployment and end-to-end user evaluation in progress.</em></li>
+                    <li data-t="rag_r1">Outperformed baseline architectures in both Mean Reciprocal Rank (MRR) and Hit Rate precision.</li>
+                    <li data-t="rag_r2">Quantifiably mitigated hallucination rates through the implementation of a strict faithfulness evaluation pipeline.</li>
+                    <li data-t="rag_r3"><em>Final capstone deployment and end-to-end user evaluation in progress.</em></li>
                 </ul>
             </section>
 
-            <div class="demo-notice" style="background-color: var(--bg-accent); padding: 1rem 1.5rem; border-radius: 10px; margin-top: 2.5rem; border-left: 4px solid var(--accent);">
-                <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;" data-t="rag_demo_note">
-                    <strong style="color: var(--text-primary);">Note:</strong> This live demonstrator is hosted on a free Hugging Face server. If the app is "sleeping," please click <strong>Restart Space</strong> and allow 1-2 minutes for the database to boot.
-                </p>
-            </div>
-
-            <div class="page-cta" style="margin-top: 1.5rem;">
+            <div class="page-cta" style="margin-top: 1.5rem; justify-content: center;">
                 <a href="https://github.com/AreTaj/sd-land-use-rag" target="_blank" rel="noopener noreferrer" class="btn-primary" data-t="view_github">View Code on GitHub</a>
-                <a href="https://huggingface.co/spaces/AreTaj/sd-land-use-explorer" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-t="launch_demo">Launch Demonstrator</a>
             </div>
         </article>
     </main>
