@@ -495,18 +495,6 @@ footer {
     border-top: 1px solid var(--border);
 }
 
-/* ─── Fade-in animations ─── */
-.fade-in {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* ─── Project Detail Pages ─── */
 .page-container {
     max-width: 780px;
@@ -893,4 +881,36 @@ footer {
 
 .tooltip-trigger {
     cursor: help;
+}
+
+/* ─── Print Styles ─── */
+@media print {
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+    .main-nav, .nav-toggle, .lang-btn, .page-cta, footer, .back-link {
+        display: none !important;
+    }
+    .page-container {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #000000 !important;
+        page-break-after: avoid;
+    }
+    p, li, span, div {
+        color: #333333 !important;
+        page-break-inside: avoid;
+    }
+    a {
+        text-decoration: none !important;
+        color: #000000 !important;
+    }
+    /* Ensure the RAG static gateway container prints cleanly */
+    .demo-embed-container {
+        background: #ffffff !important;
+        border: 1px solid #cccccc !important;
+    }
 }

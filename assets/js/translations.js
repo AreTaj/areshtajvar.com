@@ -307,14 +307,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLang') || 'en';
     updateContent(savedLang);
 
-    // Scroll animations
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
     // Tooltip logic
     const tooltip = document.getElementById('global-tooltip');
     let pinnedTrigger = null;
