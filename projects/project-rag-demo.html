@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo | San Diego Land Use Explorer</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <script src="../assets/js/translations.js"></script>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/6.12.0/gradio.js"></script>
+
+    <style>
+        .demo-page-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: var(--bg-dark);
+        }
+
+        .demo-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-dark);
+            position: relative;
+            min-height: 64px;
+        }
+
+        .demo-nav-back {
+            position: absolute;
+            left: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .demo-nav-center {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin: 0 auto;
+        }
+
+        .demo-main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: #0b0f1a;
+            width: 100%;
+        }
+
+        gradio-app {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .demo-status-bar {
+            padding: 0.75rem 2rem;
+            background: var(--bg-accent);
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-page-container">
+        <nav class="demo-nav">
+            <div class="demo-nav-back">
+                <a href="project-rag.html" class="back-link" style="margin-bottom: 0;" data-t="back_project">← Back to Project</a>
+            </div>
+            
+            <div class="demo-nav-center">
+                <img src="../assets/img/logo.png" alt="Logo" style="height: 24px;">
+                <span style="font-weight: 600; font-family: 'Outfit';">Land Use Explorer</span>
+            </div>
+        </nav>
+
+        <main class="demo-main">
+            <gradio-app src="https://aretaj-sd-land-use-explorer.hf.space"></gradio-app>
+        </main>
+
+        <div class="demo-status-bar">
+            <div class="status-dot"></div>
+            <p style="color: var(--text-secondary);" data-t="rag_demo_status">
+                <span style="color: var(--text-primary); font-weight: 600;">Note:</span> Hosted on Hugging Face Spaces. If app is sleeping, please click "Restart Space" and wait 1-2 minutes.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Set default language if needed, though this page is simple
+        window.addEventListener('load', () => {
+            const savedLang = localStorage.getItem('preferredLang') || 'en';
+            if (typeof updateContent === 'function') {
+                updateContent(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
