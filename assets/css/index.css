@@ -854,6 +854,86 @@ footer {
     }
 }
 
+/* ─── Professional Experience ─── */
+.exp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.exp-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.2rem;
+    transition: var(--transition);
+}
+
+.exp-item:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.exp-company {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.35rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.exp-date {
+    font-size: 0.92rem;
+    color: var(--text-dim);
+    font-weight: 500;
+}
+
+.exp-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.exp-role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.exp-role-title {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.exp-bullets {
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    list-style-type: disc;
+}
+
+.exp-bullets li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+}
+
+.exp-bullets li:last-child {
+    margin-bottom: 0;
+}
+
 /* Tooltip Interactive */
 .tooltip {
     position: absolute;
