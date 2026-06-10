@@ -308,6 +308,10 @@ section h2::after {
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
+.project-card.featured {
+    grid-column: 1 / -1;
+}
+
 .project-tag {
     font-size: 0.75rem;
     font-weight: 600;
