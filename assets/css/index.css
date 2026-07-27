@@ -341,9 +341,46 @@ section h2::after {
     transition: var(--transition);
 }
 
-.project-card:hover .project-arrow {
+.project-card:hover .project-arrow,
+.project-list-item:hover .project-arrow {
     color: var(--accent);
     transform: translateX(4px);
+}
+
+/* ─── Projects List View ─── */
+.project-list-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-list-title {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    display: block;
+    font-family: 'Outfit', sans-serif;
+}
+
+.project-list-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    display: block;
+}
+
+.project-list-meta {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.35rem;
+    min-width: 150px;
+}
+
+@media (max-width: 768px) {
+    .project-list-meta {
+        display: none; /* Hide tags on mobile to save space */
+    }
 }
 
 /* ─── Skills ─── */
@@ -973,28 +1010,55 @@ footer {
         background: #ffffff !important;
         color: #000000 !important;
     }
-    .main-nav, .nav-toggle, .lang-btn, .page-cta, footer, .back-link {
+
+    .main-nav,
+    .nav-toggle,
+    .lang-btn,
+    .page-cta,
+    footer,
+    .back-link {
         display: none !important;
     }
+
     .page-container {
         margin: 0 !important;
         padding: 0 !important;
     }
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: #000000 !important;
         page-break-after: avoid;
     }
-    p, li, span, div {
+
+    p,
+    li,
+    span,
+    div {
         color: #333333 !important;
         page-break-inside: avoid;
     }
+
     a {
         text-decoration: none !important;
         color: #000000 !important;
     }
+
     /* Ensure the RAG static gateway container prints cleanly */
     .demo-embed-container {
         background: #ffffff !important;
         border: 1px solid #cccccc !important;
     }
+}
+}
+
+/* Ensure the RAG static gateway container prints cleanly */
+.demo-embed-container {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+}
 }

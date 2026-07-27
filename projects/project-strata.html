@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strata Advisor</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <script src="../assets/js/translations.js"></script>
+
+    <!-- Open Graph -->
+    <meta name="description" content="An evidence-based, tax-aware portfolio management system designed to operate strictly as a Strategic Advisor.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://areshtajvar.com/projects/project-strata.html">
+    <meta property="og:title" content="Strata Advisor">
+    <meta property="og:description" content="An evidence-based, tax-aware portfolio management system designed to operate strictly as a Strategic Advisor.">
+    <meta property="og:image" content="https://areshtajvar.com/assets/img/strata-screenshot.png">
+    <link rel="canonical" href="https://areshtajvar.com/projects/project-strata.html" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://areshtajvar.com/projects/project-strata.html">
+    <meta property="twitter:title" content="Strata Advisor">
+    <meta property="twitter:description" content="An evidence-based, tax-aware portfolio management system designed to operate strictly as a Strategic Advisor.">
+    <meta property="twitter:image" content="https://areshtajvar.com/assets/img/strata-screenshot.png">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="../index.html" class="nav-logo"><img src="../assets/img/logo.png" alt="Aresh Tajvar Logo"></a>
+        <div class="nav-links">
+            <a href="../index.html#about" data-t="nav_about">About</a>
+            <a href="../index.html#projects" data-t="nav_projects">Projects</a>
+            <a href="../index.html#contact" data-t="nav_contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="lang-btn" onclick="updateContent('en')" data-lang="en">EN</button>
+            <button class="lang-btn" onclick="updateContent('es')" data-lang="es">ES</button>
+        </div>
+        <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main class="page-container">
+        <a href="../index.html#projects" class="back-link" data-t="back_portfolio">← Back to Portfolio</a>
+        
+        <header class="page-header">
+            <div class="project-tags">
+                <span data-t="strata_tag1">Quantitative Finance</span>
+                <span data-t="strata_tag2">Python</span>
+            </div>
+            <h1 data-t="project_strata_title">Strata Advisor</h1>
+            <p class="subtitle" data-t="project_strata_subtitle">An evidence-based, tax-aware portfolio management system designed to operate strictly as a Strategic Advisor.</p>
+        </header>
+
+        <article class="page-content">
+            <section>
+                <img src="../assets/img/strata-screenshot.png" alt="Strata Advisor Architecture/Dashboard" style="width: 100%; border-radius: 8px; margin-bottom: 24px; border: 1px solid var(--border);">
+                <h2 data-t="strata_arch_title">Architecture Highlights</h2>
+                <ul>
+                    <li data-t="strata_arch_l1"><strong>Meta-Layer (Budgeting):</strong> Dynamically allocates total portfolio capital across Core, Satellite, and Tactical budgets based on risk-adjusted market regimes.</li>
+                    <li data-t="strata_arch_l2"><strong>Strategic Layers (Core & Satellite):</strong> Buy-and-hold engines providing structural beta (Core) and dynamic momentum tracking (Satellite).</li>
+                    <li data-t="strata_arch_l3"><strong>Tactical Layer (Intraday):</strong> Machine-learning driven alpha signals utilizing short-term mean reversion, constrained by strict capital budgets.</li>
+                    <li data-t="strata_arch_l4"><strong>Tax-Aware Optimization:</strong> A mathematically rigorous filter that computes capital gains tax penalties on proposed reductions, actively suppressing sales if the tax drag exceeds the theoretical expected alpha.</li>
+                    <li data-t="strata_arch_l5"><strong>Advisor Mode:</strong> In compliance with API requirements, Strata Advisor does not automatically execute trades. It stages generated targets and trade intents to a dashboard requiring explicit end-user approval.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 data-t="strata_struct_title">System Structure</h2>
+                <p data-t="strata_struct_p">The core advisory packages are separated by domains:</p>
+                <ul>
+                    <li data-t="strata_struct_l1"><strong>advisory/capital_layer:</strong> Capital, API, and DB interactions.</li>
+                    <li data-t="strata_struct_l2"><strong>advisory/intraday:</strong> Tactical and Execution engines.</li>
+                    <li data-t="strata_struct_l3"><strong>advisory/shared:</strong> Authentication, Logging, and Broker integration (Schwab).</li>
+                    <li data-t="strata_struct_l4"><strong>advisory/strategic:</strong> Meta, Core, and Satellite strategies.</li>
+                    <li data-t="strata_struct_l5"><strong>scripts/:</strong> Utilities for running backtests, POCs, and debugging.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 data-t="strata_run_title">Execution & Testing</h2>
+                <p data-t="strata_run_p1">The system features a unified CLI to run live execution, TUI dashboard for staging orders, and historical backtesting.</p>
+                <p data-t="strata_run_p2">The system maintains a comprehensive test suite (120+ tests) covering the core allocators, tax-aware orchestrator logic, and historical cost-basis tracking.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p data-t="footer">© 2026 Aresh Tajvar</p>
+    </footer>
+</body>
+</html>

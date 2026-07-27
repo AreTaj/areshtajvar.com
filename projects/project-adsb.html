@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS-B Telemetry Anomaly Detector</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <script src="../assets/js/translations.js"></script>
+
+    <!-- Open Graph -->
+    <meta name="description" content="Real-time aerospace telemetry ingestion and unsupervised anomaly detection pipeline.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://areshtajvar.com/projects/project-adsb.html">
+    <meta property="og:title" content="ADS-B Telemetry Anomaly Detector">
+    <meta property="og:description" content="Real-time aerospace telemetry ingestion and unsupervised anomaly detection pipeline.">
+    <meta property="og:image" content="https://areshtajvar.com/assets/img/adsb-figure.png">
+    <link rel="canonical" href="https://areshtajvar.com/projects/project-adsb.html" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://areshtajvar.com/projects/project-adsb.html">
+    <meta property="twitter:title" content="ADS-B Telemetry Anomaly Detector">
+    <meta property="twitter:description" content="Real-time aerospace telemetry ingestion and unsupervised anomaly detection pipeline.">
+    <meta property="twitter:image" content="https://areshtajvar.com/assets/img/adsb-figure.png">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="../index.html" class="nav-logo"><img src="../assets/img/logo.png" alt="Aresh Tajvar Logo"></a>
+        <div class="nav-links">
+            <a href="../index.html#about" data-t="nav_about">About</a>
+            <a href="../index.html#projects" data-t="nav_projects">Projects</a>
+            <a href="../index.html#contact" data-t="nav_contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="lang-btn" onclick="updateContent('en')" data-lang="en">EN</button>
+            <button class="lang-btn" onclick="updateContent('es')" data-lang="es">ES</button>
+        </div>
+        <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main class="page-container">
+        <a href="../index.html#projects" class="back-link" data-t="back_portfolio">← Back to Portfolio</a>
+        
+        <header class="page-header">
+            <div class="project-tags">
+                <span data-t="adsb_tag1">SIGINT</span>
+                <span data-t="adsb_tag2">Machine Learning</span>
+            </div>
+            <h1 data-t="adsb_title">ADS-B Telemetry Anomaly Detector</h1>
+            <p class="subtitle" data-t="adsb_subtitle">Real-time aerospace telemetry ingestion and unsupervised anomaly detection pipeline.</p>
+        </header>
+
+        <article class="page-content">
+            <section>
+                <h2 data-t="launch_demo">Interactive Demo</h2>
+                <div class="demo-embed-container">
+                    <iframe src="anomaly_map_baltic_sea.html" title="ADS-B Anomaly Map" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <section>
+                <h2 data-t="context_title">Context & Problem</h2>
+                <p data-t="adsb_p1">Aircraft constantly broadcast their GPS position and velocity via Automatic Dependent Surveillance-Broadcast (ADS-B). However, in high-conflict regions like the Baltic Sea and Eastern Mediterranean, telemetry data is frequently jammed or spoofed, resulting in impossible trajectories and altitude readings.</p>
+            </section>
+
+            <section>
+                <h2 data-t="approach_title">Architecture & Approach</h2>
+                <p data-t="adsb_p2">I engineered a localized Python pipeline to ingest live flight telemetry from the OpenSky Network API. To calculate ground speed dynamically across sequential API queries, I built a stateful tracking system backed by a local SQLite database.</p>
+                <p data-t="adsb_p3">To identify anomalous behavior, the pipeline filters out physical impossibilities (e.g., ground speed exceeding Mach 1) and applies an unsupervised machine learning model. Specifically, it fits an Isolation Forest model to detect statistical outliers in barometric versus geometric altitude discrepancies and normalized velocity vectors.</p>
+            </section>
+
+            <section>
+                <h2 data-t="results_title">Key Results</h2>
+                <ul>
+                    <li data-t="adsb_r1">Built a robust, real-time data ingestion pipeline with local state management.</li>
+                    <li data-t="adsb_r2">Applied unsupervised Isolation Forest modeling to untagged, real-world geospatial data.</li>
+                    <li data-t="adsb_r3">Generated interactive, dark-themed geographic visualizations using Folium to map valid vs. anomalous trajectories.</li>
+                </ul>
+            </section>
+
+            <div class="page-cta">
+                <a href="https://github.com/AreTaj/adsb-anomaly-detector" target="_blank" rel="noopener noreferrer" class="btn-primary" data-t="view_github">View Code on GitHub</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p data-t="footer">© 2026 Aresh Tajvar</p>
+    </footer>
+</body>
+</html>

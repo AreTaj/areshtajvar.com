@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_636ab55b5cc8fd6f69442d99b671a50b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_636ab55b5cc8fd6f69442d99b671a50b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_636ab55b5cc8fd6f69442d99b671a50b = L.map(
+                "map_636ab55b5cc8fd6f69442d99b671a50b",
+                {
+                    center: [56.61761951219512, 21.211168292682927],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15d0c9b967f357b984e776d55f881f91 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_15d0c9b967f357b984e776d55f881f91.addTo(map_636ab55b5cc8fd6f69442d99b671a50b);
+        
+    
+            var feature_group_5ec25fff307cdbb48cd8c9d395701f62 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_db0594367b55ae785f4269960ac0829d = L.circleMarker(
+                [54.7026, 19.6744],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_959238bc94119816030675921da9942a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d3de5863232b30943a95749d7255b58 = $(`<div id="html_4d3de5863232b30943a95749d7255b58" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> AEG6912 <br>         <b>ICAO:</b> 51117f<br>         <b>Altitude (Baro):</b> 5791.2 m<br>         <b>Altitude (Geo):</b> 4831.08 m<br>         <b>Velocity:</b> 4.15 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_959238bc94119816030675921da9942a.setContent(html_4d3de5863232b30943a95749d7255b58);
+            
+        
+
+        circle_marker_db0594367b55ae785f4269960ac0829d.bindPopup(popup_959238bc94119816030675921da9942a)
+        ;
+
+        
+    
+    
+            var circle_marker_f3f3ab69a93abd54f1404f258223255c = L.circleMarker(
+                [59.742, 24.1463],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_13b88006222cbef5fb92f6b0e9e31f7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b2439fa8b6b47e9871d94d542ad4e8d = $(`<div id="html_9b2439fa8b6b47e9871d94d542ad4e8d" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> NSZ2900 <br>         <b>ICAO:</b> 4aca8a<br>         <b>Altitude (Baro):</b> 10972.8 m<br>         <b>Altitude (Geo):</b> 5478.78 m<br>         <b>Velocity:</b> 195.11 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_13b88006222cbef5fb92f6b0e9e31f7d.setContent(html_9b2439fa8b6b47e9871d94d542ad4e8d);
+            
+        
+
+        circle_marker_f3f3ab69a93abd54f1404f258223255c.bindPopup(popup_13b88006222cbef5fb92f6b0e9e31f7d)
+        ;
+
+        
+    
+    
+            var circle_marker_f6191786a98d4464339df9e1218bed06 = L.circleMarker(
+                [55.941, 21.0804],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_1e1d452bc8d76e87fd2e8e52c1a270e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_afa5b12f18117b1895be747f235de05d = $(`<div id="html_afa5b12f18117b1895be747f235de05d" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> SAS2749 <br>         <b>ICAO:</b> 4aca72<br>         <b>Altitude (Baro):</b> 8176.26 m<br>         <b>Altitude (Geo):</b> 487.68 m<br>         <b>Velocity:</b> 84.1 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_1e1d452bc8d76e87fd2e8e52c1a270e0.setContent(html_afa5b12f18117b1895be747f235de05d);
+            
+        
+
+        circle_marker_f6191786a98d4464339df9e1218bed06.bindPopup(popup_1e1d452bc8d76e87fd2e8e52c1a270e0)
+        ;
+
+        
+    
+    
+            var circle_marker_83caa8597c77812a78a3c9dbd5a73cf2 = L.circleMarker(
+                [56.6911, 16.3521],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_50a2730d06b7f314099377e12e2fd282 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90c8f008f4dc31033e48bec20325dd61 = $(`<div id="html_90c8f008f4dc31033e48bec20325dd61" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> TAY7LL  <br>         <b>ICAO:</b> 440102<br>         <b>Altitude (Baro):</b> 10675.62 m<br>         <b>Altitude (Geo):</b> 11117.58 m<br>         <b>Velocity:</b> 211.37 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_50a2730d06b7f314099377e12e2fd282.setContent(html_90c8f008f4dc31033e48bec20325dd61);
+            
+        
+
+        circle_marker_83caa8597c77812a78a3c9dbd5a73cf2.bindPopup(popup_50a2730d06b7f314099377e12e2fd282)
+        ;
+
+        
+    
+    
+            var circle_marker_7d5e5ea957b37858211744e5eb58a620 = L.circleMarker(
+                [53.4134, 22.0614],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_016d0ee0f03f1104319d5d2f02e993eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57721cab67c70bc7f91ae4fd6fd3ed26 = $(`<div id="html_57721cab67c70bc7f91ae4fd6fd3ed26" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> CCA967  <br>         <b>ICAO:</b> 781da5<br>         <b>Altitude (Baro):</b> 11582.4 m<br>         <b>Altitude (Geo):</b> 11818.62 m<br>         <b>Velocity:</b> 250.64 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_016d0ee0f03f1104319d5d2f02e993eb.setContent(html_57721cab67c70bc7f91ae4fd6fd3ed26);
+            
+        
+
+        circle_marker_7d5e5ea957b37858211744e5eb58a620.bindPopup(popup_016d0ee0f03f1104319d5d2f02e993eb)
+        ;
+
+        
+    
+    
+            var circle_marker_d2046d60a8ad525dee50d59231142a41 = L.circleMarker(
+                [58.199, 15.465],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_c6367ecd364ad4ab8ae64bfea746f919 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51f2667346dffb4c18632907ad7eeda0 = $(`<div id="html_51f2667346dffb4c18632907ad7eeda0" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> KLM84B  <br>         <b>ICAO:</b> 484c51<br>         <b>Altitude (Baro):</b> 3657.6 m<br>         <b>Altitude (Geo):</b> 3802.38 m<br>         <b>Velocity:</b> 149.88 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_c6367ecd364ad4ab8ae64bfea746f919.setContent(html_51f2667346dffb4c18632907ad7eeda0);
+            
+        
+
+        circle_marker_d2046d60a8ad525dee50d59231142a41.bindPopup(popup_c6367ecd364ad4ab8ae64bfea746f919)
+        ;
+
+        
+    
+    
+            var circle_marker_19ce167ebf4d183bd1ed4e33210cb9b0 = L.circleMarker(
+                [59.2986, 24.6865],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_c8b90450b3ee33842400304485bbceca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf909d2040697f4aa9cc859f5e25e92a = $(`<div id="html_bf909d2040697f4aa9cc859f5e25e92a" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> LOT792  <br>         <b>ICAO:</b> 48af02<br>         <b>Altitude (Baro):</b> 5859.78 m<br>         <b>Altitude (Geo):</b> 1524.0 m<br>         <b>Velocity:</b> 140.06 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_c8b90450b3ee33842400304485bbceca.setContent(html_bf909d2040697f4aa9cc859f5e25e92a);
+            
+        
+
+        circle_marker_19ce167ebf4d183bd1ed4e33210cb9b0.bindPopup(popup_c8b90450b3ee33842400304485bbceca)
+        ;
+
+        
+    
+    
+            var circle_marker_9c925e2bde00800d304cf73796c884fb = L.circleMarker(
+                [59.7204, 24.1307],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_469e8c78e732e418d6f58d3d2833aa2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69b1e4f4c384774e343a3ec4f910bb9d = $(`<div id="html_69b1e4f4c384774e343a3ec4f910bb9d" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> FIN9KC  <br>         <b>ICAO:</b> 461f69<br>         <b>Altitude (Baro):</b> 6507.48 m<br>         <b>Altitude (Geo):</b> 6553.2 m<br>         <b>Velocity:</b> 186.03 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_469e8c78e732e418d6f58d3d2833aa2d.setContent(html_69b1e4f4c384774e343a3ec4f910bb9d);
+            
+        
+
+        circle_marker_9c925e2bde00800d304cf73796c884fb.bindPopup(popup_469e8c78e732e418d6f58d3d2833aa2d)
+        ;
+
+        
+    
+    
+            var circle_marker_f028349011402ab7c1f5dd4f0fdcc319 = L.circleMarker(
+                [59.9895, 24.3841],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_8f389dcaf33119075ea931cbc7860c1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fd0ac116ca5c239a5fc6fa814aea3d7 = $(`<div id="html_9fd0ac116ca5c239a5fc6fa814aea3d7" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> FIN2KD  <br>         <b>ICAO:</b> 461f62<br>         <b>Altitude (Baro):</b> 10782.3 m<br>         <b>Altitude (Geo):</b> 5059.68 m<br>         <b>Velocity:</b> 190.55 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_8f389dcaf33119075ea931cbc7860c1b.setContent(html_9fd0ac116ca5c239a5fc6fa814aea3d7);
+            
+        
+
+        circle_marker_f028349011402ab7c1f5dd4f0fdcc319.bindPopup(popup_8f389dcaf33119075ea931cbc7860c1b)
+        ;
+
+        
+    
+    
+            var circle_marker_203bddcfd62034bb6c4ac4a544dad4ba = L.circleMarker(
+                [58.0616, 18.2858],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_e8c6ff2bf92e4f397b52ffe4a2b64e0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd04e8b7f9f8eced14d134d154ac62d0 = $(`<div id="html_fd04e8b7f9f8eced14d134d154ac62d0" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> BTI3KB  <br>         <b>ICAO:</b> 502d23<br>         <b>Altitude (Baro):</b> 11277.6 m<br>         <b>Altitude (Geo):</b> 11612.88 m<br>         <b>Velocity:</b> 265.91 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_e8c6ff2bf92e4f397b52ffe4a2b64e0e.setContent(html_fd04e8b7f9f8eced14d134d154ac62d0);
+            
+        
+
+        circle_marker_203bddcfd62034bb6c4ac4a544dad4ba.bindPopup(popup_e8c6ff2bf92e4f397b52ffe4a2b64e0e)
+        ;
+
+        
+    
+    
+            var circle_marker_282513be085d495d43dcf0c7d8147655 = L.circleMarker(
+                [56.4311, 23.471],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_8c3956c6c16254d50d2996b18a606567 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b9b8a226f56587227faef2499cbb183 = $(`<div id="html_2b9b8a226f56587227faef2499cbb183" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> BTI7717 <br>         <b>ICAO:</b> 502d44<br>         <b>Altitude (Baro):</b> 10149.84 m<br>         <b>Altitude (Geo):</b> 5318.76 m<br>         <b>Velocity:</b> 192.2 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_8c3956c6c16254d50d2996b18a606567.setContent(html_2b9b8a226f56587227faef2499cbb183);
+            
+        
+
+        circle_marker_282513be085d495d43dcf0c7d8147655.bindPopup(popup_8c3956c6c16254d50d2996b18a606567)
+        ;
+
+        
+    
+    
+            var circle_marker_9a3b1bb008fdebfa741534dbdc8d3037 = L.circleMarker(
+                [56.4931, 23.5089],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_1e766ae4d8364458c80b583f9162d2a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efc7030c693c84f0aac609abb4f87dc9 = $(`<div id="html_efc7030c693c84f0aac609abb4f87dc9" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> UAG84C  <br>         <b>ICAO:</b> 502d65<br>         <b>Altitude (Baro):</b> 4541.52 m<br>         <b>Altitude (Geo):</b> 4686.3 m<br>         <b>Velocity:</b> 189.4 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_1e766ae4d8364458c80b583f9162d2a4.setContent(html_efc7030c693c84f0aac609abb4f87dc9);
+            
+        
+
+        circle_marker_9a3b1bb008fdebfa741534dbdc8d3037.bindPopup(popup_1e766ae4d8364458c80b583f9162d2a4)
+        ;
+
+        
+    
+    
+            var circle_marker_b1275ad6b4c79d477987ab406a872750 = L.circleMarker(
+                [56.963, 23.976],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_8d3c98eed7179e0b31642ad3e494db19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fc9b2e3969fcb1afd6cf8665d63a638 = $(`<div id="html_6fc9b2e3969fcb1afd6cf8665d63a638" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> BTI7PY  <br>         <b>ICAO:</b> 502ce6<br>         <b>Altitude (Baro):</b> 685.8 m<br>         <b>Altitude (Geo):</b> 731.52 m<br>         <b>Velocity:</b> 70.22 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_8d3c98eed7179e0b31642ad3e494db19.setContent(html_6fc9b2e3969fcb1afd6cf8665d63a638);
+            
+        
+
+        circle_marker_b1275ad6b4c79d477987ab406a872750.bindPopup(popup_8d3c98eed7179e0b31642ad3e494db19)
+        ;
+
+        
+    
+    
+            var circle_marker_b757aeb7860f42fbe1bcaaf742c51bb5 = L.circleMarker(
+                [54.7153, 24.897],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_f83d3e5152bba73ebca2b1ea7b69f1c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f301391acb3b73dee921d2391314624c = $(`<div id="html_f301391acb3b73dee921d2391314624c" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> SAS743  <br>         <b>ICAO:</b> 4ca1cc<br>         <b>Altitude (Baro):</b> 9753.6 m<br>         <b>Altitude (Geo):</b> 3543.3 m<br>         <b>Velocity:</b> 190.24 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_f83d3e5152bba73ebca2b1ea7b69f1c8.setContent(html_f301391acb3b73dee921d2391314624c);
+            
+        
+
+        circle_marker_b757aeb7860f42fbe1bcaaf742c51bb5.bindPopup(popup_f83d3e5152bba73ebca2b1ea7b69f1c8)
+        ;
+
+        
+    
+    
+            var circle_marker_ff3ed24af232a7a871c459a5925700e6 = L.circleMarker(
+                [54.4342, 24.5444],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_e5c2f30f18273ac85e2d569a0f09cdbd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6ff034252c5ff710980f44b5a7217f0 = $(`<div id="html_b6ff034252c5ff710980f44b5a7217f0" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> GJT8AV  <br>         <b>ICAO:</b> 503e99<br>         <b>Altitude (Baro):</b> 10782.3 m<br>         <b>Altitude (Geo):</b> 4709.16 m<br>         <b>Velocity:</b> 179.36 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_e5c2f30f18273ac85e2d569a0f09cdbd.setContent(html_b6ff034252c5ff710980f44b5a7217f0);
+            
+        
+
+        circle_marker_ff3ed24af232a7a871c459a5925700e6.bindPopup(popup_e5c2f30f18273ac85e2d569a0f09cdbd)
+        ;
+
+        
+    
+    
+            var circle_marker_6bacb8df8ca984af38cb339e30b59bd2 = L.circleMarker(
+                [59.1541, 20.4681],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_acb53d33661ee55421537f745980c074 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3dff89748d6364e7bfdb4810cd3ba3ea = $(`<div id="html_3dff89748d6364e7bfdb4810cd3ba3ea" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> SAS1705 <br>         <b>ICAO:</b> 4ca14e<br>         <b>Altitude (Baro):</b> 10363.2 m<br>         <b>Altitude (Geo):</b> 10607.04 m<br>         <b>Velocity:</b> 217.96 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_acb53d33661ee55421537f745980c074.setContent(html_3dff89748d6364e7bfdb4810cd3ba3ea);
+            
+        
+
+        circle_marker_6bacb8df8ca984af38cb339e30b59bd2.bindPopup(popup_acb53d33661ee55421537f745980c074)
+        ;
+
+        
+    
+    
+            var circle_marker_cc59ac6a7333c01658cc0ac99b75b9de = L.circleMarker(
+                [54.991, 23.7913],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_256944f526095bc28624c2a2d1ac99e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7c6103416f104ff397f21aa6f62c58e = $(`<div id="html_f7c6103416f104ff397f21aa6f62c58e" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> RYR74SB <br>         <b>ICAO:</b> 48c2ad<br>         <b>Altitude (Baro):</b> 11582.4 m<br>         <b>Altitude (Geo):</b> 2225.04 m<br>         <b>Velocity:</b> 129.3 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_256944f526095bc28624c2a2d1ac99e3.setContent(html_f7c6103416f104ff397f21aa6f62c58e);
+            
+        
+
+        circle_marker_cc59ac6a7333c01658cc0ac99b75b9de.bindPopup(popup_256944f526095bc28624c2a2d1ac99e3)
+        ;
+
+        
+    
+    
+            var circle_marker_40bd274f364b65bc3654d15fa7bafd3b = L.circleMarker(
+                [56.6796, 15.4457],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_9267a9e26346e7c9803215a3e66e3d6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53cd585e2933e35f4d6e0af274398616 = $(`<div id="html_53cd585e2933e35f4d6e0af274398616" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> UPS292  <br>         <b>ICAO:</b> 45cf21<br>         <b>Altitude (Baro):</b> 11262.36 m<br>         <b>Altitude (Geo):</b> 11689.08 m<br>         <b>Velocity:</b> 236.22 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_9267a9e26346e7c9803215a3e66e3d6f.setContent(html_53cd585e2933e35f4d6e0af274398616);
+            
+        
+
+        circle_marker_40bd274f364b65bc3654d15fa7bafd3b.bindPopup(popup_9267a9e26346e7c9803215a3e66e3d6f)
+        ;
+
+        
+    
+    
+            var circle_marker_8f0554dc5247b385f41cdedcc7cf6d36 = L.circleMarker(
+                [56.4917, 23.5112],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_709fce89d1f50a606ebf8b5395134ebd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0978ac4f7979daf40149cf8a79efe06c = $(`<div id="html_0978ac4f7979daf40149cf8a79efe06c" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> RYR7NJ  <br>         <b>ICAO:</b> 48c229<br>         <b>Altitude (Baro):</b> 11277.6 m<br>         <b>Altitude (Geo):</b> 5273.04 m<br>         <b>Velocity:</b> 207.67 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_709fce89d1f50a606ebf8b5395134ebd.setContent(html_0978ac4f7979daf40149cf8a79efe06c);
+            
+        
+
+        circle_marker_8f0554dc5247b385f41cdedcc7cf6d36.bindPopup(popup_709fce89d1f50a606ebf8b5395134ebd)
+        ;
+
+        
+    
+    
+            var circle_marker_8ac04395e059e1b1b681ce5ba5b54d31 = L.circleMarker(
+                [58.7515, 22.2732],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_e4baec3556d8571c698cda0a42dc38f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfbebeceec62a81264e3b046b348da04 = $(`<div id="html_bfbebeceec62a81264e3b046b348da04" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> DLH2CF  <br>         <b>ICAO:</b> 3c667a<br>         <b>Altitude (Baro):</b> 10226.04 m<br>         <b>Altitude (Geo):</b> 10172.7 m<br>         <b>Velocity:</b> 230.68 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_e4baec3556d8571c698cda0a42dc38f7.setContent(html_bfbebeceec62a81264e3b046b348da04);
+            
+        
+
+        circle_marker_8ac04395e059e1b1b681ce5ba5b54d31.bindPopup(popup_e4baec3556d8571c698cda0a42dc38f7)
+        ;
+
+        
+    
+    
+            var circle_marker_b5c76103e886bfd89abfcc965a8cdd92 = L.circleMarker(
+                [59.0759, 17.8428],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_9dfa1e8550debcdf39e0b908e818f2bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d4f938560e5523ab8d796b87a9eea27 = $(`<div id="html_9d4f938560e5523ab8d796b87a9eea27" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> BCS9CG  <br>         <b>ICAO:</b> 3c5434<br>         <b>Altitude (Baro):</b> 4975.86 m<br>         <b>Altitude (Geo):</b> 5143.5 m<br>         <b>Velocity:</b> 203.38 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_9dfa1e8550debcdf39e0b908e818f2bf.setContent(html_9d4f938560e5523ab8d796b87a9eea27);
+            
+        
+
+        circle_marker_b5c76103e886bfd89abfcc965a8cdd92.bindPopup(popup_9dfa1e8550debcdf39e0b908e818f2bf)
+        ;
+
+        
+    
+    
+            var circle_marker_5482e04e0523b4f1aaf985ce5f97a0b4 = L.circleMarker(
+                [54.4764, 24.7227],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_8d1ec14639f3b554bbdb6b87a076ed5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8b053256d076ab65cabde09b574ea33 = $(`<div id="html_a8b053256d076ab65cabde09b574ea33" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> DLH899  <br>         <b>ICAO:</b> 3c6483<br>         <b>Altitude (Baro):</b> 10363.2 m<br>         <b>Altitude (Geo):</b> 3733.8 m<br>         <b>Velocity:</b> 174.1 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_8d1ec14639f3b554bbdb6b87a076ed5a.setContent(html_a8b053256d076ab65cabde09b574ea33);
+            
+        
+
+        circle_marker_5482e04e0523b4f1aaf985ce5f97a0b4.bindPopup(popup_8d1ec14639f3b554bbdb6b87a076ed5a)
+        ;
+
+        
+    
+    
+            var circle_marker_a9ce5d0a1f7c5430b8b5bbe57bda236f = L.circleMarker(
+                [55.222, 15.0313],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_287a61fa25febd2e4b170ac1b4db60eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ab63f1c800089261a52fc41fd3ce22f = $(`<div id="html_4ab63f1c800089261a52fc41fd3ce22f" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> SAR1956 <br>         <b>ICAO:</b> 48a5f0<br>         <b>Altitude (Baro):</b> 5234.94 m<br>         <b>Altitude (Geo):</b> 5501.64 m<br>         <b>Velocity:</b> 115.56 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_287a61fa25febd2e4b170ac1b4db60eb.setContent(html_4ab63f1c800089261a52fc41fd3ce22f);
+            
+        
+
+        circle_marker_a9ce5d0a1f7c5430b8b5bbe57bda236f.bindPopup(popup_287a61fa25febd2e4b170ac1b4db60eb)
+        ;
+
+        
+    
+    
+            var circle_marker_132ddd4d438279e6fe71a1a90d66ea9e = L.circleMarker(
+                [53.6771, 16.3456],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_89fa3e09d8dffccf9793bf4ed4b7dc79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f597641e89157985c551bd4927c06ae = $(`<div id="html_4f597641e89157985c551bd4927c06ae" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> BCS15N  <br>         <b>ICAO:</b> 440bc1<br>         <b>Altitude (Baro):</b> 7048.5 m<br>         <b>Altitude (Geo):</b> 10485.12 m<br>         <b>Velocity:</b> 258.04 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_89fa3e09d8dffccf9793bf4ed4b7dc79.setContent(html_4f597641e89157985c551bd4927c06ae);
+            
+        
+
+        circle_marker_132ddd4d438279e6fe71a1a90d66ea9e.bindPopup(popup_89fa3e09d8dffccf9793bf4ed4b7dc79)
+        ;
+
+        
+    
+    
+            var circle_marker_abbdd3dba61641fd8a4a5365d21ef301 = L.circleMarker(
+                [59.6837, 24.5912],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_2d864f161b19a0a15d557ee73f81da7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51bb17bd214400dd9099c1085ca6c6a3 = $(`<div id="html_51bb17bd214400dd9099c1085ca6c6a3" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> FIN7MR  <br>         <b>ICAO:</b> 4601f6<br>         <b>Altitude (Baro):</b> 5379.72 m<br>         <b>Altitude (Geo):</b> 5166.36 m<br>         <b>Velocity:</b> 119.78 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_2d864f161b19a0a15d557ee73f81da7f.setContent(html_51bb17bd214400dd9099c1085ca6c6a3);
+            
+        
+
+        circle_marker_abbdd3dba61641fd8a4a5365d21ef301.bindPopup(popup_2d864f161b19a0a15d557ee73f81da7f)
+        ;
+
+        
+    
+    
+            var circle_marker_1f557edfa1f1cc6319295143baec315b = L.circleMarker(
+                [58.2892, 21.4288],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_b023420c970a97b9dc9f428aa3362b53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d71c602e6053ff372a12740c3584a841 = $(`<div id="html_d71c602e6053ff372a12740c3584a841" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> SAS84P  <br>         <b>ICAO:</b> 4ca6d9<br>         <b>Altitude (Baro):</b> 9753.6 m<br>         <b>Altitude (Geo):</b> 10005.06 m<br>         <b>Velocity:</b> 224.87 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_b023420c970a97b9dc9f428aa3362b53.setContent(html_d71c602e6053ff372a12740c3584a841);
+            
+        
+
+        circle_marker_1f557edfa1f1cc6319295143baec315b.bindPopup(popup_b023420c970a97b9dc9f428aa3362b53)
+        ;
+
+        
+    
+    
+            var circle_marker_773d79773c59cf0c54ee1e4d20e74815 = L.circleMarker(
+                [53.3036, 17.8266],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_7beccc10e76b05a16719355379e6cee0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccef2c12ecba3df3067a4697eee6bd45 = $(`<div id="html_ccef2c12ecba3df3067a4697eee6bd45" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> ABR5959 <br>         <b>ICAO:</b> 4ca6d6<br>         <b>Altitude (Baro):</b> 11887.2 m<br>         <b>Altitude (Geo):</b> 12390.12 m<br>         <b>Velocity:</b> 245.14 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_7beccc10e76b05a16719355379e6cee0.setContent(html_ccef2c12ecba3df3067a4697eee6bd45);
+            
+        
+
+        circle_marker_773d79773c59cf0c54ee1e4d20e74815.bindPopup(popup_7beccc10e76b05a16719355379e6cee0)
+        ;
+
+        
+    
+    
+            var circle_marker_5aaf56a70d283249b308e9bd9995e832 = L.circleMarker(
+                [57.8844, 16.1682],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_8d38259b8390957f9b1c7d49265e5a78 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc934286d09f7d8c63501f5fbbecf2fe = $(`<div id="html_dc934286d09f7d8c63501f5fbbecf2fe" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> RYR6505 <br>         <b>ICAO:</b> 4ca847<br>         <b>Altitude (Baro):</b> 10965.18 m<br>         <b>Altitude (Geo):</b> 11323.32 m<br>         <b>Velocity:</b> 243.1 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_8d38259b8390957f9b1c7d49265e5a78.setContent(html_dc934286d09f7d8c63501f5fbbecf2fe);
+            
+        
+
+        circle_marker_5aaf56a70d283249b308e9bd9995e832.bindPopup(popup_8d38259b8390957f9b1c7d49265e5a78)
+        ;
+
+        
+    
+    
+            var circle_marker_39e887bb1ef69d9ae7f4e0352f14c227 = L.circleMarker(
+                [54.5704, 15.185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_ac94fcc7d2a3ae8501a16de76ea5994c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_793a39c0ae15ae262a87b303578f1ce1 = $(`<div id="html_793a39c0ae15ae262a87b303578f1ce1" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> BCS3612 <br>         <b>ICAO:</b> 8940bb<br>         <b>Altitude (Baro):</b> 10675.62 m<br>         <b>Altitude (Geo):</b> 11132.82 m<br>         <b>Velocity:</b> 232.91 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_ac94fcc7d2a3ae8501a16de76ea5994c.setContent(html_793a39c0ae15ae262a87b303578f1ce1);
+            
+        
+
+        circle_marker_39e887bb1ef69d9ae7f4e0352f14c227.bindPopup(popup_ac94fcc7d2a3ae8501a16de76ea5994c)
+        ;
+
+        
+    
+    
+            var circle_marker_e0164d25f2106da2604a3305000f4270 = L.circleMarker(
+                [54.4261, 24.4915],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_d52f07d7169bfa78561c644c716311a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f048bff8405119f2dbe5c3b38fcf3cf9 = $(`<div id="html_f048bff8405119f2dbe5c3b38fcf3cf9" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> LOT774  <br>         <b>ICAO:</b> 48adb9<br>         <b>Altitude (Baro):</b> 6964.68 m<br>         <b>Altitude (Geo):</b> 4785.36 m<br>         <b>Velocity:</b> 168.39 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_d52f07d7169bfa78561c644c716311a1.setContent(html_f048bff8405119f2dbe5c3b38fcf3cf9);
+            
+        
+
+        circle_marker_e0164d25f2106da2604a3305000f4270.bindPopup(popup_d52f07d7169bfa78561c644c716311a1)
+        ;
+
+        
+    
+    
+            var circle_marker_c24da57d83ccbf9e93719918ee9cb50b = L.circleMarker(
+                [59.4361, 24.1766],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_bf05d8f838f67c025ba02f848e784f10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c97793dacf448743083241888f429a7 = $(`<div id="html_9c97793dacf448743083241888f429a7" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> SAS1771 <br>         <b>ICAO:</b> 4cafd6<br>         <b>Altitude (Baro):</b> 8054.34 m<br>         <b>Altitude (Geo):</b> 3672.84 m<br>         <b>Velocity:</b> 166.7 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_bf05d8f838f67c025ba02f848e784f10.setContent(html_9c97793dacf448743083241888f429a7);
+            
+        
+
+        circle_marker_c24da57d83ccbf9e93719918ee9cb50b.bindPopup(popup_bf05d8f838f67c025ba02f848e784f10)
+        ;
+
+        
+    
+    
+            var circle_marker_2d44f8e19984dd41bfbcef298aff149d = L.circleMarker(
+                [54.4748, 24.722],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_9ef719a37c8583ee3f089773fce31d9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e4d66e6ae0dcc24d2376a66a04c8a63 = $(`<div id="html_7e4d66e6ae0dcc24d2376a66a04c8a63" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> WZZ3XS  <br>         <b>ICAO:</b> 4d24d4<br>         <b>Altitude (Baro):</b> 10363.2 m<br>         <b>Altitude (Geo):</b> 4061.46 m<br>         <b>Velocity:</b> 97.24 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_9ef719a37c8583ee3f089773fce31d9e.setContent(html_7e4d66e6ae0dcc24d2376a66a04c8a63);
+            
+        
+
+        circle_marker_2d44f8e19984dd41bfbcef298aff149d.bindPopup(popup_9ef719a37c8583ee3f089773fce31d9e)
+        ;
+
+        
+    
+    
+            var circle_marker_32db2cd01e531be4d7844c9ff6899a6c = L.circleMarker(
+                [59.3008, 17.6263],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_0158d59716865feafbd5d38075b655f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2205e514f35ebc7903591b9be37b944 = $(`<div id="html_c2205e514f35ebc7903591b9be37b944" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> RYR892M <br>         <b>ICAO:</b> 4caecb<br>         <b>Altitude (Baro):</b> 3855.72 m<br>         <b>Altitude (Geo):</b> 3954.78 m<br>         <b>Velocity:</b> 176.39 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_0158d59716865feafbd5d38075b655f8.setContent(html_c2205e514f35ebc7903591b9be37b944);
+            
+        
+
+        circle_marker_32db2cd01e531be4d7844c9ff6899a6c.bindPopup(popup_0158d59716865feafbd5d38075b655f8)
+        ;
+
+        
+    
+    
+            var circle_marker_de17fe8c5650466766e7eed764a34d8e = L.circleMarker(
+                [56.8662, 23.2388],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_e4060a4c81ee87f9647b6b01251689e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fcd613057ae29bcb25641da425bdcecb = $(`<div id="html_fcd613057ae29bcb25641da425bdcecb" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> SAS1645 <br>         <b>ICAO:</b> 4caf16<br>         <b>Altitude (Baro):</b> 10363.2 m<br>         <b>Altitude (Geo):</b> 4648.2 m<br>         <b>Velocity:</b> 155.2 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_e4060a4c81ee87f9647b6b01251689e3.setContent(html_fcd613057ae29bcb25641da425bdcecb);
+            
+        
+
+        circle_marker_de17fe8c5650466766e7eed764a34d8e.bindPopup(popup_e4060a4c81ee87f9647b6b01251689e3)
+        ;
+
+        
+    
+    
+            var circle_marker_396cb67a7e813063d2c82961af5c7fd8 = L.circleMarker(
+                [53.2852, 17.5104],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_434e24d2d74cb3aa5edd4a98b4efde52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86568efe8888e695b47845ec4d45c02a = $(`<div id="html_86568efe8888e695b47845ec4d45c02a" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> WZZ879  <br>         <b>ICAO:</b> 4d242d<br>         <b>Altitude (Baro):</b> 10668.0 m<br>         <b>Altitude (Geo):</b> 10728.96 m<br>         <b>Velocity:</b> 35.6 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_434e24d2d74cb3aa5edd4a98b4efde52.setContent(html_86568efe8888e695b47845ec4d45c02a);
+            
+        
+
+        circle_marker_396cb67a7e813063d2c82961af5c7fd8.bindPopup(popup_434e24d2d74cb3aa5edd4a98b4efde52)
+        ;
+
+        
+    
+    
+            var circle_marker_b7d9723d4f1601e3be2284c8f04c5565 = L.circleMarker(
+                [54.7205, 24.8738],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_49c80150f2639a558c215849eac59a11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_914fa32cfdd144573674ccf3f21d4b1f = $(`<div id="html_914fa32cfdd144573674ccf3f21d4b1f" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> WZZ83DN <br>         <b>ICAO:</b> 4d2423<br>         <b>Altitude (Baro):</b> 10363.2 m<br>         <b>Altitude (Geo):</b> 3512.82 m<br>         <b>Velocity:</b> 161.25 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_49c80150f2639a558c215849eac59a11.setContent(html_914fa32cfdd144573674ccf3f21d4b1f);
+            
+        
+
+        circle_marker_b7d9723d4f1601e3be2284c8f04c5565.bindPopup(popup_49c80150f2639a558c215849eac59a11)
+        ;
+
+        
+    
+    
+            var circle_marker_f22bd81936d255eec11ac6caaa7a82f5 = L.circleMarker(
+                [54.6789, 19.894],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_b1d02f0ae6b461add82e349a7636fe2c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efaf27c5518ff1257ac4a609954628f4 = $(`<div id="html_efaf27c5518ff1257ac4a609954628f4" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> CAI9113 <br>         <b>ICAO:</b> 4bd14f<br>         <b>Altitude (Baro):</b> 11277.6 m<br>         <b>Altitude (Geo):</b> 10317.48 m<br>         <b>Velocity:</b> 5.75 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_b1d02f0ae6b461add82e349a7636fe2c.setContent(html_efaf27c5518ff1257ac4a609954628f4);
+            
+        
+
+        circle_marker_f22bd81936d255eec11ac6caaa7a82f5.bindPopup(popup_b1d02f0ae6b461add82e349a7636fe2c)
+        ;
+
+        
+    
+    
+            var circle_marker_80eaf7213d8687a8a3961fca64b10e2b = L.circleMarker(
+                [59.4122, 17.8235],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_652c62d97542cfec5c4680d3d2307cd4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39ff0f71330ddd7ed12aeed85d0cb315 = $(`<div id="html_39ff0f71330ddd7ed12aeed85d0cb315" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> RYR56BK <br>         <b>ICAO:</b> 4d2229<br>         <b>Altitude (Baro):</b> 3108.96 m<br>         <b>Altitude (Geo):</b> 3185.16 m<br>         <b>Velocity:</b> 146.49 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_652c62d97542cfec5c4680d3d2307cd4.setContent(html_39ff0f71330ddd7ed12aeed85d0cb315);
+            
+        
+
+        circle_marker_80eaf7213d8687a8a3961fca64b10e2b.bindPopup(popup_652c62d97542cfec5c4680d3d2307cd4)
+        ;
+
+        
+    
+    
+            var circle_marker_5fc2f9864b9dd8cb4731fe61f7d76282 = L.circleMarker(
+                [58.3063, 21.4776],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5ec25fff307cdbb48cd8c9d395701f62);
+        
+    
+        var popup_b8b49438dd615afacd341ae7daf45014 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2385bd7295d6be7cf818574bc5e704ca = $(`<div id="html_2385bd7295d6be7cf818574bc5e704ca" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> DLH885  <br>         <b>ICAO:</b> 3c66e1<br>         <b>Altitude (Baro):</b> 10972.8 m<br>         <b>Altitude (Geo):</b> 10500.36 m<br>         <b>Velocity:</b> 224.01 m/s<br>         <b>Anomalous:</b> False         </div>`)[0];
+                popup_b8b49438dd615afacd341ae7daf45014.setContent(html_2385bd7295d6be7cf818574bc5e704ca);
+            
+        
+
+        circle_marker_5fc2f9864b9dd8cb4731fe61f7d76282.bindPopup(popup_b8b49438dd615afacd341ae7daf45014)
+        ;
+
+        
+    
+    
+            feature_group_5ec25fff307cdbb48cd8c9d395701f62.addTo(map_636ab55b5cc8fd6f69442d99b671a50b);
+        
+    
+            var feature_group_84888a0e5e57e687a333a36702e756a8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_8fc7c7b5ca5f953638d13c3d664eb721 = L.circleMarker(
+                [54.8881, 23.8249],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_84888a0e5e57e687a333a36702e756a8);
+        
+    
+        var popup_497425f0852c985f0beec4e98be7c664 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ad69c7588d413886d345bc77d0802b0 = $(`<div id="html_6ad69c7588d413886d345bc77d0802b0" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> RYR9HM  <br>         <b>ICAO:</b> 48c1a6<br>         <b>Altitude (Baro):</b> 11277.6 m<br>         <b>Altitude (Geo):</b> 2293.62 m<br>         <b>Velocity:</b> 327.68 m/s<br>         <b>Anomalous:</b> True         </div>`)[0];
+                popup_497425f0852c985f0beec4e98be7c664.setContent(html_6ad69c7588d413886d345bc77d0802b0);
+            
+        
+
+        circle_marker_8fc7c7b5ca5f953638d13c3d664eb721.bindPopup(popup_497425f0852c985f0beec4e98be7c664)
+        ;
+
+        
+    
+    
+            var circle_marker_f9277203e0a5f84b67567b85347b5b78 = L.circleMarker(
+                [54.4807, 24.7028],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_84888a0e5e57e687a333a36702e756a8);
+        
+    
+        var popup_ac9a25e840b31dbf034e9023959c489c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21589810d07ac6fd1502c115e3a93ddb = $(`<div id="html_21589810d07ac6fd1502c115e3a93ddb" style="width: 100.0%; height: 100.0%;">         <b>Callsign:</b> RYR973Z <br>         <b>ICAO:</b> 48ea4d<br>         <b>Altitude (Baro):</b> 10972.8 m<br>         <b>Altitude (Geo):</b> 4221.48 m<br>         <b>Velocity:</b> 1309.42 m/s<br>         <b>Anomalous:</b> True         </div>`)[0];
+                popup_ac9a25e840b31dbf034e9023959c489c.setContent(html_21589810d07ac6fd1502c115e3a93ddb);
+            
+        
+
+        circle_marker_f9277203e0a5f84b67567b85347b5b78.bindPopup(popup_ac9a25e840b31dbf034e9023959c489c)
+        ;
+
+        
+    
+    
+            feature_group_84888a0e5e57e687a333a36702e756a8.addTo(map_636ab55b5cc8fd6f69442d99b671a50b);
+        
+    
+            var layer_control_54fdea1c10f2aa5ad03e72eafe2fa9c8_layers = {
+                base_layers : {
+                    "cartodbdarkmatter" : tile_layer_15d0c9b967f357b984e776d55f881f91,
+                },
+                overlays :  {
+                    "Valid Trajectories (Cleaned Path)" : feature_group_5ec25fff307cdbb48cd8c9d395701f62,
+                    "Anomalous Trajectories" : feature_group_84888a0e5e57e687a333a36702e756a8,
+                },
+            };
+            let layer_control_54fdea1c10f2aa5ad03e72eafe2fa9c8 = L.control.layers(
+                layer_control_54fdea1c10f2aa5ad03e72eafe2fa9c8_layers.base_layers,
+                layer_control_54fdea1c10f2aa5ad03e72eafe2fa9c8_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_636ab55b5cc8fd6f69442d99b671a50b);
+
+        
+</script>
+</html>
