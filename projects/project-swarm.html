@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adversarial Swarm Simulator</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <script src="../assets/js/translations.js"></script>
+
+    <!-- Open Graph -->
+    <meta name="description" content="Simulation framework for studying emergent stigmergic swarm dynamics under localized electromagnetic interference (EMI).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://areshtajvar.com/projects/project-swarm.html">
+    <meta property="og:title" content="Adversarial Swarm Simulator">
+    <meta property="og:description" content="Simulation framework for studying emergent stigmergic swarm dynamics under localized electromagnetic interference (EMI).">
+    <meta property="og:image" content="https://areshtajvar.com/assets/img/swarm_simulation.gif">
+    <link rel="canonical" href="https://areshtajvar.com/projects/project-swarm.html" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://areshtajvar.com/projects/project-swarm.html">
+    <meta property="twitter:title" content="Adversarial Swarm Simulator">
+    <meta property="twitter:description" content="Simulation framework for studying emergent stigmergic swarm dynamics under localized electromagnetic interference (EMI).">
+    <meta property="twitter:image" content="https://areshtajvar.com/assets/img/swarm_simulation.gif">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="../index.html" class="nav-logo"><img src="../assets/img/logo.png" alt="Aresh Tajvar Logo"></a>
+        <div class="nav-links">
+            <a href="../index.html#about" data-t="nav_about">About</a>
+            <a href="../index.html#projects" data-t="nav_projects">Projects</a>
+            <a href="../index.html#contact" data-t="nav_contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="lang-btn" onclick="updateContent('en')" data-lang="en">EN</button>
+            <button class="lang-btn" onclick="updateContent('es')" data-lang="es">ES</button>
+        </div>
+        <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main class="page-container">
+        <a href="../index.html#projects" class="back-link" data-t="back_portfolio">← Back to Portfolio</a>
+        
+        <header class="page-header">
+            <div class="project-tags">
+                <span data-t="swarm_tag1">Defense Tech</span>
+                <span data-t="swarm_tag2">Swarm Intelligence</span>
+                <span data-t="swarm_tag3">Autonomous Systems</span>
+            </div>
+            <h1 data-t="swarm_title">Adversarial Swarm Simulator</h1>
+            <p class="subtitle" data-t="swarm_subtitle">Simulation framework for studying emergent stigmergic swarm dynamics under localized electromagnetic interference (EMI).</p>
+        </header>
+
+        <article class="page-content">
+            <section>
+                <img src="../assets/img/swarm_simulation.gif" alt="Adversarial Swarm Simulator Real-Time Pygame GUI Animation" style="width: 100%; border-radius: 8px; margin-bottom: 24px; border: 1px solid var(--border);">
+                <h2 data-t="context_title">Context & Problem</h2>
+                <p data-t="swarm_p1">Coordinating autonomous multi-drone swarms in environments without GPS and without external communications (such as ground station or operator links) requires decentralization. Centralized command-and-control (C2) architectures create single points of failure when subjected to directional jamming or electronic warfare (EW).</p>
+                <p data-t="swarm_p2">Biological stigmergy (decentralized indirect coordination via spatial environmental signals) provides a decentralized alternative. Continuous low-power RF telemetry broadcasts fade over time as information becomes stale, functioning as virtual pheromones. Evaluating how signal decay rates, sensor radii, and active EW jamming fields interact across parameter spaces requires empirical simulation and sensitivity analysis.</p>
+            </section>
+
+            <section>
+                <h2 data-t="approach_title">Architecture & Approach</h2>
+                <p data-t="swarm_p3">To model decentralized coordination, I developed a 2D spatial simulation engine in Python built on dual-team signal grids (<code>PheromoneGrid</code>). When drones discover objective nodes, they deposit directional recruitment trails that fade exponentially over step iterations to model telemetry signal staleness. Inside active jamming sectors, localized EMI fields reduce perceived trail intensity (<em>I</em><sub>perceived</sub> = <em>I</em><sub>true</sub> × (1 - jamming_intensity)) and attenuate exploration entropy.</p>
+                <p data-t="swarm_p4">Individual drone navigation is governed by a 5-tier decision tree evaluated at every step: <strong>Attack</strong> nearby enemy units within combat range, <strong>Defend</strong> threatened friendly nodes, <strong>Capture</strong> locked objective nodes, <strong>Follow Trails</strong> by climbing ascending recruitment gradients (<em>I</em><sub>cand</sub> > <em>I</em><sub>curr</sub> + 0.1), and <strong>Patrol & Explore</strong> unvisited grid sectors. Objective control is managed by an <em>N</em>-drone <em>T</em>-step uncontested state machine with instant reset logic if an opposing drone enters the capture radius.</p>
+                <p data-t="swarm_p5">For parameter analysis, I built a multi-process experiment runner that executes headless sweeps in parallel, logging run metrics directly to CSV files. The analytical pipeline includes an automated movement stagnation detector (<code>is_jitter_clustering</code>) that tracks early-game spawn displacement, alongside a Matplotlib plotting module that generates sensitivity curves with confidence bands and match outcome distributions.</p>
+            </section>
+
+            <section>
+                <h2 data-t="results_title">Key Results</h2>
+                <ul>
+                    <li data-t="swarm_r1">Telemetry Decay Thresholds: Simulation sweeps showed that telemetry decay rates below 0.2 cause swarm movement to stagnate at spawn, while rates above 0.5 increase capture speed, resolving matches in 150–300 steps instead of 500.</li>
+                    <li data-t="swarm_r2">Electronic Warfare Resilience: Directional jamming disrupts individual drone trajectories locally, but does not alter final match outcomes or team win rates, proving decentralized swarm coordination is resilient to RF interference.</li>
+                    <li data-t="swarm_r3">Capture Threshold Bottlenecks: Increasing the required drones per node from 1 to 10 reduced average team node control from 4.5 down to 1.4 nodes due to swarm dispersion constraints.</li>
+                    <li data-t="swarm_r4">Sensor Range & Resolution Speed: Expanding drone sensor range from 8 to 20 grid cells significantly increased exploration speed and reduced match resolution time across all seeds.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 data-t="takeaways_title">Strategic & System Takeaways</h2>
+                <ul>
+                    <li data-t="swarm_t1">Decentralized Stigmergy vs. Centralized C2: Stigmergic telemetry enables multi-agent swarms to self-organize and achieve objectives without external communications, ground stations, or operator control.</li>
+                    <li data-t="swarm_t2">Telemetry Decay Rates: Telemetry signal retention must be tuned above a decay rate of 0.5 to prevent movement stagnation and allow dynamic objective capture.</li>
+                    <li data-t="swarm_t3">Capture Threshold Trade-offs: Raising the required drones per node from 1 to 10 reduced average node control from 4.5 down to 1.4 nodes due to swarm dispersion across the map.</li>
+                    <li data-t="swarm_t4">Sensor Range vs. Jamming Intensity: Expanding sensor detection range from 8 to 20 grid cells directly increased exploration speed, whereas varying jamming intensity produced no statistically significant change in macro match outcomes.</li>
+                </ul>
+            </section>
+
+            <div class="page-cta">
+                <a href="https://github.com/AreTaj/swarm-simulator" target="_blank" rel="noopener noreferrer" class="btn-primary" data-t="view_github">View Code on GitHub</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p data-t="footer">© 2026 Aresh Tajvar</p>
+    </footer>
+</body>
+</html>
