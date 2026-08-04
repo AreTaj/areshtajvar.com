@@ -3,6 +3,9 @@ const translations = {
         // Nav
         nav_about: "About",
         nav_projects: "Projects",
+        nav_education: "Education",
+        nav_experience: "Work",
+        nav_skills: "Skills",
         nav_contact: "Contact",
 
         // Hero
@@ -11,7 +14,7 @@ const translations = {
         tagline: 'Applying Artificial Intelligence.<br><br><span class="hero-degree">Master of Science in Applied Artificial Intelligence</span><br><span class="hero-degree-sub">Bachelor of Science in Business Administration | Financial Management</span>',
 
         // Experience
-        exp_title: "Professional Experience",
+        exp_title: "Work History",
         exp_ng: "Northrop Grumman Corporation",
         exp_ng_date: "June 2021 – Sept 2023",
         exp_role1_title: "Associate Program Planning & Scheduling Analyst",
@@ -31,14 +34,21 @@ const translations = {
 
         // Education
         edu_title: "Education",
-        edu_usd: "University of San Diego Shiley-Marcos School of Engineering",
+        edu_usd: "University of San Diego",
+        edu_usd_date: "2024 – 2026",
         edu_ms: "Master of Science in Applied Artificial Intelligence",
-        edu_ms_gpa: "GPA: 4.0",
-        edu_calpoly: "California Polytechnic State University San Luis Obispo",
+        edu_ms_meta: "Shiley-Marcos School of Engineering · GPA: 4.0",
+        edu_ms_b1: "<strong>Machine Learning & Deep Learning:</strong> Machine Learning Fundamentals (AAI 510), Neural Networks & Learning (AAI 511), Machine Learning Operations / MLOps (AAI 540).",
+        edu_ms_b2: "<strong>NLP & Computer Vision:</strong> Natural Language Processing (AAI 520), Applied Computer Vision for AI (AAI 521).",
+        edu_ms_b3: "<strong>AI Foundations & Analytics:</strong> Probability & Stats for AI (AAI 500), Introduction to AI (AAI 501), Data Analytics & IoT (AAI 530), Ethics in AI (AAI 531).",
+        edu_ms_b4: "<strong>Capstone Project:</strong> AAI 590 Capstone Project — domain-adapted RAG legal document retrieval system with faithfulness evaluation.",
+        edu_calpoly: "California Polytechnic State University, San Luis Obispo",
+        edu_calpoly_date: "2019 – 2023",
         edu_bs: "Bachelor of Science in Business Administration | Financial Management",
-        edu_bs_gpa: "GPA: 3.5 / 4.0",
-        desc_edu_ms: "Master's program focused on advanced ML architecture. Specialized coursework includes Neural Networks & Deep Learning, NLP & GenAI, Applied Computer Vision, and Machine Learning Operations (MLOps).",
-        desc_edu_bs: "Technical degree with a focus on financial management. Key coursework includes Econometrics, Advanced Corporate Finance, Portfolio Management, Economics, and Statistics.",
+        edu_bs_meta: "Orfalea College of Business · GPA: 3.5",
+        edu_bs_b1: "<strong>Financial Management & Valuation:</strong> Security Analysis & Portfolio Management (BUS 431), Fundamentals of Corporate Finance (BUS 342), Advanced Corporate Finance (BUS 438), Fixed Income Securities Market (BUS 439), Real Estate Finance (BUS 434), International Finance (BUS 433).",
+        edu_bs_b2: "<strong>Econometrics & Statistics:</strong> Econometrics (ECON 339), Statistical Inference & Management I & II (STAT 251, STAT 252), Calculus for Business & Economics (MATH 221), Macroeconomics (ECON 222), Microeconomics (ECON 221).",
+        edu_bs_b3: "<strong>Business Strategy & Accounting:</strong> General Management & Strategy (BUS 401), Financial Accounting (BUS 214), Managerial Accounting (BUS 215), Information Systems (BUS 391), Senior Project I & II (BUS 461, BUS 462).",
 
         // Projects
         projects_title: "Projects",
@@ -57,7 +67,7 @@ const translations = {
         project_arrow: "View case study →",
 
         // Skills
-        skills_title: "Expertise",
+        skills_title: "Skills",
         tech_skills: "Technical Stack",
         professional_skills: "Professional & Industry",
         skill_cost_mgmt: "Cost & Schedule Management",
@@ -222,6 +232,9 @@ const translations = {
         // Nav
         nav_about: "Sobre mí",
         nav_projects: "Proyectos",
+        nav_education: "Educación",
+        nav_experience: "Trabajo",
+        nav_skills: "Habilidades",
         nav_contact: "Contacto",
 
         // Hero
@@ -230,7 +243,7 @@ const translations = {
         tagline: 'Aplicando Inteligencia Artificial.<br><br><span class="hero-degree">Maestría en Inteligencia Artificial Aplicada</span><br><span class="hero-degree-sub">Licenciatura en Administración de Empresas | Gestión Financiera</span>',
 
         // Experience
-        exp_title: "Experiencia Profesional",
+        exp_title: "Historial Laboral",
         exp_ng: "Northrop Grumman Corporation",
         exp_ng_date: "Junio 2021 – Septiembre 2023",
         exp_role1_title: "Analista de Planificación y Control de Proyectos",
@@ -250,14 +263,21 @@ const translations = {
 
         // Education
         edu_title: "Educación",
-        edu_usd: "Escuela de Ingeniería Shiley-Marcos de la Universidad de San Diego",
+        edu_usd: "Universidad de San Diego",
+        edu_usd_date: "2024 – 2026",
         edu_ms: "Maestría en Inteligencia Artificial Aplicada",
-        edu_ms_gpa: "GPA: 4.0",
-        edu_calpoly: "California Polytechnic State University San Luis Obispo",
-        edu_bs: "Licenciatura en Administración de Empresas con especialización en Finanzas",
-        edu_bs_gpa: "GPA: 3.5 / 4.0",
-        desc_edu_ms: "Programa avanzado enfocado en la arquitectura de ML. Cursos especializados en Redes Neuronales, Procesamiento del Lenguaje Natural (NLP) e IA Generativa, Visión Artificial y Operaciones de Aprendizaje Automático (MLOps).",
-        desc_edu_bs: "Titulación cuantitativa enfocada en gestión financiera. Cursos clave que incluyen Econometría, Finanzas Corporativas Avanzadas, Gestión de Portafolios, Economía y Estadística.",
+        edu_ms_meta: "Escuela de Ingeniería Shiley-Marcos · GPA: 4.0",
+        edu_ms_b1: "<strong>Aprendizaje Automático y Profundo:</strong> Fundamentos de Machine Learning (AAI 510), Redes Neuronales y Aprendizaje (AAI 511), Operaciones de Machine Learning / MLOps (AAI 540).",
+        edu_ms_b2: "<strong>PNL y Visión por Computadora:</strong> Procesamiento del Lenguaje Natural (AAI 520), Visión por Computadora Aplicada a la IA (AAI 521).",
+        edu_ms_b3: "<strong>Fundamentos de IA y Analítica:</strong> Probabilidad y Estadística para IA (AAI 500), Introducción a la IA (AAI 501), Analítica de Datos e IoT (AAI 530), Ética en IA (AAI 531).",
+        edu_ms_b4: "<strong>Proyecto Capstone:</strong> Proyecto Capstone AAI 590 — sistema RAG adaptado al dominio para recuperación de documentos legales con evaluación de fidelidad.",
+        edu_calpoly: "California Polytechnic State University, San Luis Obispo",
+        edu_calpoly_date: "2019 – 2023",
+        edu_bs: "Licenciatura en Administración de Empresas | Gestión Financiera",
+        edu_bs_meta: "Orfalea College of Business · GPA: 3.5",
+        edu_bs_b1: "<strong>Gestión Financiera y Valoración:</strong> Análisis de Valores y Gestión de Portafolios (BUS 431), Fundamentos de Finanzas Corporativas (BUS 342), Finanzas Corporativas Avanzadas (BUS 438), Mercado de Valores de Renta Fija (BUS 439), Finanzas Inmobiliarias (BUS 434), Finanzas Internacionales (BUS 433).",
+        edu_bs_b2: "<strong>Econometría y Estadística:</strong> Econometría (ECON 339), Inferencia Estadística y Gestión I y II (STAT 251, STAT 252), Cálculo para Negocios y Economía (MATH 221), Macroeconomía (ECON 222), Microeconomía (ECON 221).",
+        edu_bs_b3: "<strong>Estrategia Empresarial y Contabilidad:</strong> Estrategia y Gestión General (BUS 401), Contabilidad Financiera (BUS 214), Contabilidad de Gestión (BUS 215), Sistemas de Información (BUS 391), Proyecto Final I y II (BUS 461, BUS 462).",
 
         // Projects
         projects_title: "Proyectos",
@@ -276,7 +296,7 @@ const translations = {
         project_arrow: "Ver caso de estudio →",
 
         // Skills
-        skills_title: "Especialización",
+        skills_title: "Habilidades",
         tech_skills: "Conocimientos Técnicos",
         professional_skills: "Habilidades Profesionales",
         skill_cost_mgmt: "Gestión de Costes y Cronogramas",
