@@ -9,7 +9,6 @@ const translations = {
         nav_contact: "Contact",
 
         // Hero
-        status: "Open to roles in the US & Spain",
         name: "Aresh Tajvar",
         tagline: 'Applying Artificial Intelligence.<br><br><span class="hero-degree">Master of Science in Applied Artificial Intelligence</span><br><span class="hero-degree-sub">Bachelor of Science in Business Administration | Financial Management</span>',
 
@@ -30,7 +29,7 @@ const translations = {
         about_title: "About",
         about_p1: 'I am an MS Applied Artificial Intelligence graduate with professional experience in program management, financial analysis, and enterprise reporting. I combine rigorous AI/ML technical foundations with business strategy acumen to drive transformation at the intersection of technology and operations.',
         about_p2: 'I hold a Master of Science in Applied Artificial Intelligence from the University of San Diego and a Bachelor of Science in Business Administration from California Polytechnic State University, San Luis Obispo. My work focuses on the practical application of AI, including retrieval pipelines for legal documents, predictive models for health analytics, image classification systems, and computational finance tools.',
-        about_p3: 'I am trilingual in English, Spanish, and Persian, and I am currently open to data analysis, quantitative finance, or engineering roles in the United States or Spain that leverage my hybrid analytical skillset.',
+        about_p3: 'I am trilingual in English, Spanish, and Persian.',
 
         // Education
         edu_title: "Education",
@@ -90,7 +89,7 @@ const translations = {
 
         // Contact
         contact_title: "Get in Touch",
-        contact_text: "Looking for a data professional with finance domain knowledge and multilingual skills? I'd love to connect.",
+        contact_text: "Feel free to reach out via LinkedIn or email.",
         contact_cta: "Connect on LinkedIn",
         contact_email: "Email",
         contact_gh: "GitHub",
@@ -238,7 +237,6 @@ const translations = {
         nav_contact: "Contacto",
 
         // Hero
-        status: "Disponible para oportunidades profesionales en EE. UU. y España",
         name: "Aresh Tajvar",
         tagline: 'Aplicando Inteligencia Artificial.<br><br><span class="hero-degree">Maestría en Inteligencia Artificial Aplicada</span><br><span class="hero-degree-sub">Licenciatura en Administración de Empresas | Gestión Financiera</span>',
 
@@ -256,10 +254,10 @@ const translations = {
         exp_role3_b1: "Elaboración de informes de planificación y cronogramas semanales y mensuales, métricas del sector y resúmenes de desempeño para la alta dirección utilizando Microsoft Project y MS Excel.",
 
         // About
-        about_title: "Trayectoria",
-        about_p1: 'Soy graduado en Inteligencia Artificial Aplicada con experiencia profesional en gestión de programas, análisis financiero e informes corporativos. Combino una rigurosa base técnica en IA/ML con perspicacia en estrategia empresarial para impulsar la transformación en la intersección de la tecnología y las operaciones.',
-        about_p2: 'Tengo una Maestría en Inteligencia Artificial Aplicada de la Universidad de San Diego y una Licenciatura en Administración de Empresas de la California Polytechnic State University, San Luis Obispo. Mi trabajo se centra en la aplicación práctica de la IA, incluyendo sistemas de búsqueda para documentos legales, modelos predictivos de salud, clasificación de imágenes satelitales y herramientas cuantitativas de finanzas computacionales.',
-        about_p3: 'Cuento con un dominio trilingüe en inglés, español y persa, y actualmente me encuentro en búsqueda activa de posiciones en análisis de datos, finanzas cuantitativas o roles de ingeniería en Estados Unidos o España.',
+        about_title: "Sobre mí",
+        about_p1: 'Soy graduado de la Maestría en Inteligencia Artificial Aplicada con experiencia profesional en gestión de programas, análisis financiero e informes corporativos. Combino una rigurosa base técnica en IA/ML con visión estratégica de negocio para impulsar la transformación en la intersección de la tecnología y las operaciones.',
+        about_p2: 'Tengo una Maestría en Inteligencia Artificial Aplicada de la Universidad de San Diego y una Licenciatura en Administración de Empresas de California Polytechnic State University, San Luis Obispo. Mi trabajo se centra en la aplicación práctica de la IA, incluyendo pipelines de recuperación para documentos legales, modelos predictivos para analítica de salud, sistemas de clasificación de imágenes y herramientas de finanzas computacionales.',
+        about_p3: 'Soy trilingüe en inglés, español y persa.',
 
         // Education
         edu_title: "Educación",
@@ -319,7 +317,7 @@ const translations = {
 
         // Contact
         contact_title: "Contacto",
-        contact_text: "¿Buscas un profesional de datos con conocimiento en finanzas y dominio trilingüe? Me encantaría conectar.",
+        contact_text: "No dudes en ponerte en contacto a través de LinkedIn o correo electrónico.",
         contact_cta: "Conectar en LinkedIn",
         contact_email: "Email",
         contact_gh: "GitHub",
