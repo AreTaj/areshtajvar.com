@@ -9,11 +9,11 @@
     <script src="../assets/js/translations.js"></script>
 
     <!-- Open Graph -->
-    <meta name="description" content="Predictive health analytics and Hurdle Models combined with an accessible tracking interface for chronic symptoms.">
+    <meta name="description" content="A chronic symptom tracking and health analytics application designed with a low-friction, accessible interface.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://areshtajvar.com/projects/project-migraine.html">
     <meta property="og:title" content="Migraine Navigator">
-    <meta property="og:description" content="Predictive health analytics and Hurdle Models combined with an accessible tracking interface for chronic symptoms.">
+    <meta property="og:description" content="A chronic symptom tracking and health analytics application designed with a low-friction, accessible interface.">
     <meta property="og:image" content="https://areshtajvar.com/assets/img/aresh-tajvar-profile.jpg">
     <link rel="canonical" href="https://areshtajvar.com/projects/project-migraine.html" />
 
@@ -21,7 +21,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://areshtajvar.com/projects/project-migraine.html">
     <meta property="twitter:title" content="Migraine Navigator">
-    <meta property="twitter:description" content="Predictive health analytics and Hurdle Models combined with an accessible tracking interface for chronic symptoms.">
+    <meta property="twitter:description" content="A chronic symptom tracking and health analytics application designed with a low-friction, accessible interface.">
     <meta property="twitter:image" content="https://areshtajvar.com/assets/img/aresh-tajvar-profile.jpg">
 </head>
 <body>
@@ -49,38 +49,33 @@
         <header class="page-header">
             <div class="project-tags">
                 <span data-t="project_migraine_tag">Health Tech</span>
-                <span data-t="project_migraine_tag_2">Machine Learning</span>
+                <span data-t="project_migraine_tag_2">Product Design</span>
             </div>
             <h1 data-t="project_migraine_title">Migraine Navigator</h1>
-            <p class="subtitle" data-t="project_migraine_desc">Predictive health analytics using Gradient Boosting and Hurdle Models with an accessible tracking interface.</p>
+            <p class="subtitle" data-t="project_migraine_desc">A chronic symptom tracking and health analytics application designed with a low-friction, accessible interface.</p>
         </header>
 
         <article class="page-content">
             <section>
                 <h2 data-t="context_title">Context & Problem</h2>
-                <p data-t="migraine_p1">Standard pain reporting scales are highly subjective, making chronic condition tracking unreliable over the long term. A patient's self-reported "5 out of 10" pain level may not represent the same physiological experience from one year to the next.</p>
-                <p data-t="migraine_p2">Additionally, health tracking systems often ask for input when the user is actively experiencing symptoms (like a migraine), leading to high abandonment rates if the interface causes cognitive load or visual strain.</p>
+                <p data-t="migraine_p1">Tracking chronic conditions over time presents significant usability challenges, as self-reported symptom severity is inherently subjective and difficult to standardize.</p>
+                <p data-t="migraine_p2">During acute symptom episodes, light sensitivity, cognitive fatigue, and physical discomfort can make detailed screen interactions and complex data entry difficult.</p>
             </section>
 
             <section>
-                <h2 data-t="approach_title">Architecture & Approach</h2>
-                <p data-t="migraine_p3">On the modeling side, I implemented a backend system utilizing <strong>Gradient Boosting Decision Trees (GBDT)</strong> and <strong>Hurdle Models</strong>. By separating the problem into two probabilistic stages — whether an event will occur, and if so, how severe it will be — the model mirrors true clinical outcomes.</p>
-                <p data-t="migraine_p4">On the frontend, I engineered an accessible, low-friction UI specifically designed for users experiencing neurological discomfort. The interface relies on tap-based inputs like symptom pill buttons and segmented controls, minimizing typing. I also implemented <em>usage-based smart sorting</em> to dynamically elevate the user's most frequent triggers and medications to the top of the interface.</p>
+                <h2 data-t="features_title">Features & Functionality</h2>
+                <p data-t="migraine_p3">Migraine Navigator provides a streamlined interface optimized for fast, tap-based logging during acute symptom episodes, eliminating tedious data entry and minimizing visual strain.</p>
+                <p data-t="migraine_p4">The application dynamically organizes triggers, symptoms, and treatments to surface a user's most relevant options, while tracking patterns over time to help users and healthcare providers better understand symptom episodes.</p>
             </section>
 
             <section>
-                <h2 data-t="results_title">Key Results</h2>
+                <h2 data-t="highlights_title">Key Highlights</h2>
                 <ul>
-                    <li data-t="migraine_r1">Created an accessible, separation-of-concerns architecture for the frontend, passing 100% of UI threshold tests.</li>
-                    <li data-t="migraine_r2">Reduced cognitive load for active users through intelligent, personalized sorting algorithms.</li>
-                    <li data-t="migraine_r3">Developed an analytical model that systematically accounts for longitudinal data drift and the subjectivity inherent in self-reported pain scores.</li>
+                    <li data-t="migraine_r1">Low-friction, tap-first logging interface designed specifically to reduce cognitive load and visual fatigue during episodes.</li>
+                    <li data-t="migraine_r2">Intelligent interface customization that personalizes trigger, medication, and symptom tracking based on individual usage patterns.</li>
+                    <li data-t="migraine_r3">Longitudinal health tracking tools to visualize symptom patterns and uncover potential episode correlations.</li>
                 </ul>
             </section>
-
-            <div class="page-cta">
-                <a href="https://github.com/AreTaj/Migraine-Navigator" target="_blank" rel="noopener noreferrer" class="btn-primary" data-t="view_github">View Code on GitHub</a>
-                <a href="https://aretaj.github.io/Migraine-Navigator/" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-t="view_live">View Live Project</a>
-            </div>
         </article>
     </main>
 
