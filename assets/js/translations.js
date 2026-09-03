@@ -103,6 +103,8 @@ const translations = {
 
         // Tooltip Descriptions
         desc_python: "High-level programming language used extensively for data science, AI, and backend logic.",
+        desc_swift: "Native, type-safe programming language developed by Apple for iOS, iPadOS, and macOS systems.",
+        desc_swiftui: "Declarative UI framework for architecting reactive user interfaces across Apple platforms.",
         desc_sql: "Domain-specific language for managing and querying structured databases.",
         desc_r: "Programming language specific to statistical analysis and graphical data modeling.",
         desc_tf: "End-to-end open source platform by Google for building and deploying machine learning models.",
@@ -124,6 +126,7 @@ const translations = {
         desc_scrum: "Certified agile project management focusing on iterative delivery and team coordination.",
         desc_evm: "Earned Value Management: industry standard methodology integrating cost, schedule, and technical performance to measure project progress.",
         desc_ai_ethics: "AI Ethics & Governance: governance framework and ethical guidelines to ensure AI systems are fair, transparent, and value-aligned.",
+        desc_nist: "NIST AI Risk Management Framework (AI RMF): standard framework for managing risks, safety, and trustworthiness in AI systems.",
         desc_powerbi: "Microsoft Power BI: interactive business intelligence and data visualization software for executive reporting.",
         desc_msproject: "Microsoft Project: project scheduling and management software used to track progress and manage budgets.",
         desc_excel: "Advanced Microsoft Excel spreadsheet calculations, forecasting, and financial data modeling.",
@@ -347,6 +350,8 @@ const translations = {
 
         // Tooltip Descriptions
         desc_python: "Lenguaje versátil utilizado extensamente en ciencia de datos, inteligencia artificial avanzada y lógica de sistemas.",
+        desc_swift: "Lenguaje nativo y con seguridad de tipos desarrollado por Apple para sistemas iOS, iPadOS y macOS.",
+        desc_swiftui: "Framework de UI declarativo para diseñar interfaces de usuario reactivas en plataformas de Apple.",
         desc_sql: "Lenguaje especializado para la gestión y consulta de bases de datos relacionales estructuradas.",
         desc_r: "Lenguaje enfocado en el análisis estadístico riguroso y la modelización gráfica de datos.",
         desc_tf: "Plataforma de código abierto desarrollada por Google para la construcción y despliegue de modelos de aprendizaje automático.",
@@ -366,6 +371,7 @@ const translations = {
         desc_scrum: "Certificación en metodologías ágiles enfocada en la entrega iterativa de valor y coordinación de equipos técnicos.",
         desc_evm: "Gestión del Valor Ganado (EVM): metodología estándar de la industria para integrar costes, plazos y alcance con el fin de evaluar el desempeño de proyectos.",
         desc_ai_ethics: "Ética y Gobernanza de IA: marco para asegurar que los sistemas de inteligencia artificial sean justos, transparentes y alineados éticamente.",
+        desc_nist: "Marco de Gestión de Riesgos de IA del NIST (AI RMF): estándar para gestionar la fiabilidad, seguridad y gobernanza de sistemas de IA.",
         desc_powerbi: "Microsoft Power BI: plataforma de inteligencia de negocios (BI) y visualización de datos para informes directivos.",
         desc_msproject: "Microsoft Project: software de gestión de proyectos para el desarrollo de cronogramas y control de presupuestos.",
         desc_excel: "Microsoft Excel: cálculos complejos, proyecciones financieras y análisis de datos en hojas de cálculo.",
