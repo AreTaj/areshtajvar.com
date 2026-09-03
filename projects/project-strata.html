@@ -58,32 +58,31 @@
         <article class="page-content">
             <section>
                 <img src="../assets/img/strata-screenshot.png" alt="Strata Advisor Architecture/Dashboard" style="width: 100%; border-radius: 8px; margin-bottom: 24px; border: 1px solid var(--border);">
-                <h2 data-t="strata_arch_title">Architecture Highlights</h2>
+                <h2 data-t="approach_title">Architecture & Approach</h2>
+                <p data-t="strata_p1">Strata Advisor is an evidence-based, tax-aware portfolio management system written in Python and designed to operate strictly as a Strategic Advisor. It integrates historical backtesting, a volatility-governed emergent allocation framework, and quantitative machine-learning models to balance long-term asset selection with tactical alpha.</p>
+                <p data-t="strata_p2">Portfolio exposure ceilings scale dynamically through a volatility governor (<code>MetaAllocator</code>) that compares trailing realized market volatility against target volatility thresholds. Asset selection and position sizing across the universe are handled by a unified strategic engine (<code>DynamicAllocator</code>) combining relative momentum rankings with inverse volatility risk parity.</p>
+                <p data-t="strata_p3">Tactical machine-learning models (<code>EnsembleModel</code>) receive an emergent residual budget consisting of unallocated cash from the strategic engine to trade intraday mean reversion. Proposed rebalancing orders pass through a tax-aware optimization filter that evaluates lot-level cost basis and holding periods, suppressing sales when tax friction exceeds marginal expected alpha while enforcing hard safeguards during steep drawdowns.</p>
+                <p data-t="strata_p4">In compliance with Schwab API non-discretionary requirements, Strata Advisor does not automatically execute live trades. It stages generated targets and trade intents to a local terminal user interface (TUI) dashboard for explicit human review and approval prior to broker execution.</p>
+            </section>
+
+            <section>
+                <h2 data-t="highlights_title">Key Highlights</h2>
                 <ul>
-                    <li data-t="strata_arch_l1"><strong>Meta-Layer (Budgeting):</strong> Dynamically allocates total portfolio capital across Core, Satellite, and Tactical budgets based on risk-adjusted market regimes.</li>
-                    <li data-t="strata_arch_l2"><strong>Strategic Layers (Core & Satellite):</strong> Buy-and-hold engines providing structural beta (Core) and dynamic momentum tracking (Satellite).</li>
-                    <li data-t="strata_arch_l3"><strong>Tactical Layer (Intraday):</strong> Machine-learning driven alpha signals utilizing short-term mean reversion, constrained by strict capital budgets.</li>
-                    <li data-t="strata_arch_l4"><strong>Tax-Aware Optimization:</strong> A mathematically rigorous filter that computes capital gains tax penalties on proposed reductions, actively suppressing sales if the tax drag exceeds the theoretical expected alpha.</li>
-                    <li data-t="strata_arch_l5"><strong>Advisor Mode:</strong> In compliance with API requirements, Strata Advisor does not automatically execute trades. It stages generated targets and trade intents to a dashboard requiring explicit end-user approval.</li>
+                    <li data-t="strata_r1">Volatility-governed exposure scaling that deleverages the portfolio during elevated market volatility.</li>
+                    <li data-t="strata_r2">Unified strategic asset allocation using Top-N relative momentum and inverse volatility position sizing.</li>
+                    <li data-t="strata_r3">Emergent residual budgeting for tactical machine-learning models using unallocated strategic capital.</li>
+                    <li data-t="strata_r4">Tax-aware rebalance optimization that evaluates capital gains friction with conviction-weighted exit hurdles.</li>
+                    <li data-t="strata_r5">Non-discretionary advisor mode featuring a local TUI staging dashboard, unified CLI, and a 120+ test suite.</li>
                 </ul>
             </section>
 
             <section>
-                <h2 data-t="strata_struct_title">System Structure</h2>
-                <p data-t="strata_struct_p">The core advisory packages are separated by domains:</p>
+                <h2 data-t="takeaways_title">Strategic & System Takeaways</h2>
                 <ul>
-                    <li data-t="strata_struct_l1"><strong>advisory/capital_layer:</strong> Capital, API, and DB interactions.</li>
-                    <li data-t="strata_struct_l2"><strong>advisory/intraday:</strong> Tactical and Execution engines.</li>
-                    <li data-t="strata_struct_l3"><strong>advisory/shared:</strong> Authentication, Logging, and Broker integration (Schwab).</li>
-                    <li data-t="strata_struct_l4"><strong>advisory/strategic:</strong> Meta, Core, and Satellite strategies.</li>
-                    <li data-t="strata_struct_l5"><strong>scripts/:</strong> Utilities for running backtests, POCs, and debugging.</li>
+                    <li data-t="strata_t1">Accounting for lot-level tax friction allows high-conviction winning assets to compound undisturbed as core positions, preventing marginal rebalancing from triggering unnecessary capital gains liabilities.</li>
+                    <li data-t="strata_t2">Capital efficiency is preserved across market regimes by channeling unallocated strategic cash into tactical ML models when volatility scaling reduces strategic exposure.</li>
+                    <li data-t="strata_t3">Structuring the platform as a non-discretionary advisor with TUI staging ensures strict broker API compliance and human-in-the-loop validation before live order execution.</li>
                 </ul>
-            </section>
-
-            <section>
-                <h2 data-t="strata_run_title">Execution & Testing</h2>
-                <p data-t="strata_run_p1">The system features a unified CLI to run live execution, TUI dashboard for staging orders, and historical backtesting.</p>
-                <p data-t="strata_run_p2">The system maintains a comprehensive test suite (120+ tests) covering the core allocators, tax-aware orchestrator logic, and historical cost-basis tracking.</p>
             </section>
         </article>
     </main>
