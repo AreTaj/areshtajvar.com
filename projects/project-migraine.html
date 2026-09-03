@@ -48,34 +48,50 @@
         
         <header class="page-header">
             <div class="project-tags">
-                <span data-t="project_migraine_tag">Health Tech</span>
-                <span data-t="project_migraine_tag_2">Product Design</span>
+                <span data-t="migraine_tag1">iOS</span>
+                <span data-t="migraine_tag2">Health Tech</span>
+                <span data-t="migraine_tag3">Swift</span>
             </div>
             <h1 data-t="project_migraine_title">Migraine Navigator</h1>
-            <p class="subtitle" data-t="project_migraine_desc">A chronic symptom tracking and health analytics application designed with a low-friction, accessible interface.</p>
+            <p class="subtitle" data-t="project_migraine_subtitle">A native iOS application engineered for on-device migraine pattern recognition, environmental monitoring, and accessible symptom tracking.</p>
         </header>
 
         <article class="page-content">
             <section>
                 <h2 data-t="context_title">Context & Problem</h2>
-                <p data-t="migraine_p1">Tracking chronic conditions over time presents significant usability challenges, as self-reported symptom severity is inherently subjective and difficult to standardize.</p>
-                <p data-t="migraine_p2">During acute symptom episodes, light sensitivity, cognitive fatigue, and physical discomfort can make detailed screen interactions and complex data entry difficult.</p>
+                <p data-t="migraine_p1">Tracking chronic health conditions often creates significant cognitive friction. During acute migraine episodes, light sensitivity, cognitive fatigue, and physical discomfort make conventional mobile interfaces—filled with bright colors, fluid animations, and tedious multi-step inputs—difficult or painful to use.</p>
+                <p data-t="migraine_p2">Furthermore, migraine triggers are deeply individualized and heavily influenced by external shifts. Effectively identifying episode patterns requires synthesizing personal biometric indicators with localized environmental factors without compromising sensitive medical data.</p>
             </section>
 
             <section>
-                <h2 data-t="features_title">Features & Functionality</h2>
-                <p data-t="migraine_p3">Migraine Navigator provides a streamlined interface optimized for fast, tap-based logging during acute symptom episodes, eliminating tedious data entry and minimizing visual strain.</p>
-                <p data-t="migraine_p4">The application dynamically organizes triggers, symptoms, and treatments to surface a user's most relevant options, while tracking patterns over time to help users and healthcare providers better understand symptom episodes.</p>
+                <h2 data-t="approach_title">Architecture & Approach</h2>
+                <p data-t="migraine_p3">I developed Migraine Navigator as a native iOS and iPadOS application using <strong>Swift</strong>, <strong>SwiftUI</strong>, and <strong>SwiftData</strong>. The system is architected with a strict on-device privacy model: all physiological records, location coordinates, database queries, and predictive computations execute locally without remote telemetry or cloud processing.</p>
+                <p data-t="migraine_p4">To capture real-time context, the application integrates natively with <strong>Apple WeatherKit</strong> for barometric pressure, temperature, and humidity tracking, alongside <strong>Apple HealthKit</strong> for resting heart rate, heart rate variability, and sleep metrics. Forward-looking analytical models evaluate historical episode data against these live streams to generate individualized risk forecasts.</p>
+                <p data-t="migraine_p5">The interface is engineered specifically for photophobia accessibility. It replaces bouncy physics, spring animations, and fluid transitions with calm, static, high-contrast controls and a single-tap discrete rating grid for effortless logging during active symptoms.</p>
             </section>
 
             <section>
                 <h2 data-t="highlights_title">Key Highlights</h2>
                 <ul>
-                    <li data-t="migraine_r1">Low-friction, tap-first logging interface designed specifically to reduce cognitive load and visual fatigue during episodes.</li>
-                    <li data-t="migraine_r2">Intelligent interface customization that personalizes trigger, medication, and symptom tracking based on individual usage patterns.</li>
-                    <li data-t="migraine_r3">Longitudinal health tracking tools to visualize symptom patterns and uncover potential episode correlations.</li>
+                    <li data-t="migraine_r1">Built entirely on a zero-telemetry local architecture where all health analytics and biometric storage remain strictly on-device.</li>
+                    <li data-t="migraine_r2">Engineered native Apple HealthKit and WeatherKit ingestion pipelines to correlate biometric strain with localized atmospheric pressure shifts.</li>
+                    <li data-t="migraine_r3">Designed a photophobia-calibrated SwiftUI interface that eliminates motion triggers and visual glare for pain-free logging during acute episodes.</li>
+                    <li data-t="migraine_r4">Implemented longitudinal analytics using native Swift Charts to visualize 24-hour risk curves, 7-day environmental outlooks, and episode trends with full CSV portability.</li>
                 </ul>
             </section>
+
+            <section>
+                <h2 data-t="takeaways_title">Strategic & System Takeaways</h2>
+                <ul>
+                    <li data-t="migraine_t1">Prioritizing on-device computation ensures complete patient privacy and offline reliability for critical medical tracking without recurring cloud dependencies.</li>
+                    <li data-t="migraine_t2">Accessibility-first product design in healthcare requires tailoring interface physics directly to symptom pathology, substituting conventional motion design with static, low-glare interactions.</li>
+                    <li data-t="migraine_t3">Synthesizing ambient environmental data with passive biometrics delivers personalized risk insights without imposing manual data entry burdens on users.</li>
+                </ul>
+            </section>
+
+            <div class="page-cta">
+                <a href="https://navigatemigraine.com/" target="_blank" rel="noopener noreferrer" class="btn-primary" data-t="visit_product">Visit Product Website ↗</a>
+            </div>
         </article>
     </main>
 
