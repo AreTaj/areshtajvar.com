@@ -74,17 +74,19 @@
             <section>
                 <h2 data-t="results_title">Key Results</h2>
                 <ul>
-                    <li data-t="swarm_r1">Telemetry Decay Thresholds: Units stall when the signal decay rate is low (≤ 0.2) because stale telemetry signals persist too long. Setting the decay rate above 0.2 stops units from stalling, while tuning it above 0.5 increases capture speed, resolving matches in 150–300 steps instead of 500.</li>
-                    <li data-t="swarm_r2">Electronic Warfare Resilience: Directional jamming disrupts individual drone trajectories locally, but does not alter final match outcomes or team win rates, proving decentralized swarm coordination is resilient to RF interference.</li>
-                    <li data-t="swarm_r3">Capture Threshold Bottlenecks: Increasing the required drones per node from 1 to 10 reduced average team node control from 4.5 down to 1.4 nodes due to swarm dispersion constraints.</li>
-                    <li data-t="swarm_r4">Sensor Range & Resolution Speed: Expanding drone sensor range from 8 to 20 grid cells significantly increased exploration speed and reduced match resolution time across all seeds.</li>
+                    <li data-t="swarm_r1">Signal decay rates below 0.2 trigger movement stagnation and clustering around spawn points, whereas rates above 0.5 accelerate match resolution from 500 down to 150–300 steps.</li>
+                    <li data-t="swarm_r2">Directional jamming fields alter tactical micro-trajectories without degrading macro win rates or territorial outcomes, confirming strategic swarm resilience under intense EMI.</li>
+                    <li data-t="swarm_r3">Increasing node capture thresholds from 1 to 10 drones reduces average team control from 4.5 to 1.4 nodes as dispersion limits multi-objective coverage.</li>
+                    <li data-t="swarm_r4">Expanding sensor detection radii from 8 to 20 grid cells yields the fastest territory acquisition across all symmetric parameter sweeps.</li>
                 </ul>
             </section>
 
             <section>
                 <h2 data-t="takeaways_title">Strategic & System Takeaways</h2>
                 <ul>
-                    <li data-t="swarm_t1">Decentralized Stigmergy vs. Centralized C2: Stigmergic telemetry enables multi-agent swarms to self-organize and achieve objectives without external communications, ground stations, or operator control.</li>
+                    <li data-t="swarm_t1">Indirect spatial stigmergy eliminates the vulnerability of single-point centralized command networks in denied communications environments.</li>
+                    <li data-t="swarm_t2">Macro electronic warfare resilience emerges naturally because swarms bypass local trajectory jamming through decentralized continuous trail recruitment across uncontested sectors.</li>
+                    <li data-t="swarm_t3">Batch parallel simulation over 1,600+ runs revealed that signal decay rate acts as the primary phase-transition governor between swarm stagnation and dynamic capture.</li>
                 </ul>
             </section>
 
