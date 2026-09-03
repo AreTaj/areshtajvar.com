@@ -378,8 +378,29 @@ section h2::after {
 }
 
 @media (max-width: 768px) {
+    .project-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
     .project-list-meta {
-        display: none; /* Hide tags on mobile to save space */
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 0;
+        padding-top: 0.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .project-list-meta .project-tag {
+        font-size: 0.72rem;
+        letter-spacing: 0.05em;
+    }
+
+    .project-list-meta .project-arrow {
+        font-size: 0.8rem;
     }
 }
 
@@ -860,6 +881,14 @@ footer {
         display: flex;
     }
 
+    section {
+        padding: 3.5rem 0;
+    }
+
+    .exp-item {
+        padding: 1.5rem;
+    }
+
     .hero h1 {
         font-size: 2.6rem;
     }
@@ -1060,12 +1089,4 @@ footer {
         background: #ffffff !important;
         border: 1px solid #cccccc !important;
     }
-}
-}
-
-/* Ensure the RAG static gateway container prints cleanly */
-.demo-embed-container {
-    background: #ffffff !important;
-    border: 1px solid #cccccc !important;
-}
 }
