@@ -14,6 +14,12 @@ const translations = {
 
         // Experience
         exp_title: "Work History",
+        exp_tajvar: "Tajvar AI Technologies",
+        exp_tajvar_date: "Apr 2025 – Present",
+        exp_tajvar_role: "Founder, AI Product & Systems Engineer",
+        exp_tajvar_b1: "Built a personalized health forecasting application end-to-end, from an initial Python prototype to a Swift-based production native iOS release, as the sole technical contributor responsible for architecture, design, and engineering.",
+        exp_tajvar_b2: "Structured all product outputs and disclaimers to operate within non-diagnostic mobile software boundaries.",
+        exp_tajvar_b3: "Conducted market research, competitive analysis, and commercialization planning to evaluate viable business pathways.",
         exp_ng: "Northrop Grumman Corporation",
         exp_ng_date: "June 2021 – Sept 2023",
         exp_role1_title: "Associate Program Planning & Scheduling Analyst",
@@ -252,16 +258,22 @@ const translations = {
 
         // Experience
         exp_title: "Historial Laboral",
+        exp_tajvar: "Tajvar AI Technologies",
+        exp_tajvar_date: "Abril 2025 – Presente",
+        exp_tajvar_role: "Fundador, Ingeniero de Productos y Sistemas de IA",
+        exp_tajvar_b1: "Desarrollé una aplicación personalizada de pronóstico de salud de extremo a extremo, desde un prototipo inicial en Python hasta un lanzamiento de producción nativo en Swift para iOS, como único colaborador técnico a cargo de la arquitectura, diseño e ingeniería.",
+        exp_tajvar_b2: "Estructuré las salidas y avisos del producto para operar estrictamente dentro del marco de software móvil no diagnóstico.",
+        exp_tajvar_b3: "Realicé estudios de mercado, análisis competitivo y planes de comercialización para evaluar modelos de negocio viables.",
         exp_ng: "Northrop Grumman Corporation",
         exp_ng_date: "Junio 2021 – Septiembre 2023",
         exp_role1_title: "Analista de Planificación y Control de Proyectos",
-        exp_role1_b1: "Aplicación de la metodología de Gestión del Valor Ganado (EVM) para monitorear el desempeño del programa de acuerdo con los requisitos del contrato gubernamental, elaborando informes ejecutivos semanales y mensuales con Power BI y MS Project.",
-        exp_role1_b2: "Coordinación entre la gestión comercial interna, la ingeniería y el liderazgo de ingeniería sénior, además de comunicación directa con clientes gubernamentales, para asegurar el cumplimiento del contrato y la presentación de informes de desviaciones.",
+        exp_role1_b1: "Apliqué la metodología de Gestión del Valor Ganado (EVM) para monitorear el desempeño del programa según los requisitos de contratos gubernamentales, generando informes ejecutivos periódicos mediante Power BI y MS Project.",
+        exp_role1_b2: "Coordiné con la gestión interna, líderes de ingeniería y clientes gubernamentales para asegurar el cumplimiento contractual y la entrega de reportes de variaciones.",
         exp_role2_title: "Prácticas en Gestión Empresarial",
-        exp_role2_b1: "Soporte en la transición corporativa hacia flujos de trabajo estandarizados en Smartsheet para la gestión de costes y plazos en la división de Vigilancia Global.",
-        exp_role2_b2: "Coordinación con los Responsables de Cuentas de Control (CAMs) en áreas de ingeniería y finanzas como Planificador de Mano de Obra para el programa de Sostenimiento de Global Hawk.",
+        exp_role2_b1: "Facilité la transición empresarial hacia flujos de trabajo estandarizados en Smartsheet para la gestión de costes y cronogramas en la división de Vigilancia Global.",
+        exp_role2_b2: "Coordiné con los Responsables de Cuentas de Control (CAM) en ingeniería y finanzas como Planificador de Mano de Obra para el programa de Sostenimiento del Global Hawk.",
         exp_role3_title: "Prácticas en Gestión de Cronogramas",
-        exp_role3_b1: "Elaboración de informes de planificación y cronogramas semanales y mensuales, métricas del sector y resúmenes de desempeño para la alta dirección utilizando Microsoft Project y MS Excel.",
+        exp_role3_b1: "Elaboré reportes de cronograma a nivel corporativo, métricas sectoriales e informes ejecutivos de desempeño para la alta dirección utilizando Microsoft Project y MS Excel.",
 
         // About
         about_title: "Sobre mí",
