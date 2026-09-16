@@ -14,7 +14,7 @@ const translations = {
 
         // Experience
         exp_title: "Work History",
-        exp_tajvar: "Tajvar AI Technologies",
+        exp_tajvar: "Point Reyes Technologies LLC",
         exp_tajvar_date: "Apr 2025 – Present",
         exp_tajvar_role: "Founder, AI Product & Systems Engineer",
         exp_tajvar_b1: "Built a personalized health forecasting application end-to-end, from an initial Python prototype to a Swift-based production native iOS release, as the sole technical contributor responsible for architecture, design, and engineering.",
@@ -264,7 +264,7 @@ const translations = {
 
         // Experience
         exp_title: "Historial Laboral",
-        exp_tajvar: "Tajvar AI Technologies",
+        exp_tajvar: "Point Reyes Technologies LLC",
         exp_tajvar_date: "Abril 2025 – Presente",
         exp_tajvar_role: "Fundador, Ingeniero de Productos y Sistemas de IA",
         exp_tajvar_b1: "Desarrollé una aplicación personalizada de pronóstico de salud de extremo a extremo, desde un prototipo inicial en Python hasta un lanzamiento de producción nativo en Swift para iOS, como único colaborador técnico a cargo de la arquitectura, diseño e ingeniería.",
