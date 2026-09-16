@@ -514,7 +514,26 @@ function updateContent(lang) {
     localStorage.setItem('preferredLang', lang);
 }
 
+function applyTheme(theme) {
+    const isDark = theme === 'dark';
+    document.body.classList.toggle('dark-mode', isDark);
+    document.querySelectorAll('.theme-toggle').forEach(toggle => {
+        toggle.setAttribute('aria-pressed', String(isDark));
+        toggle.querySelector('.theme-toggle-label').textContent = isDark ? 'Light' : 'Dark';
+    });
+    localStorage.setItem('preferredTheme', isDark ? 'dark' : 'light');
+}
+
+function toggleTheme() {
+    applyTheme(document.body.classList.contains('dark-mode') ? 'light' : 'dark');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('preferredTheme');
+    const systemTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches
+        ? 'light'
+        : 'dark';
+    applyTheme(savedTheme || systemTheme);
     const savedLang = localStorage.getItem('preferredLang') || 'en';
     updateContent(savedLang);
 
