@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap');
 
 :root {
-    --bg-dark: #07090d;
-    --bg-card: #0f141b;
-    --bg-accent: #151d28;
+    --bg-dark: #0c1117;
+    --bg-card: #151d26;
+    --bg-accent: #1c2832;
 
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
-    --text-dim: #94a3b8;
+    --text-primary: #f7f3ea;
+    --text-secondary: #cbd0d0;
+    --text-dim: #9da8a9;
 
-    --accent: #4f8cff;
-    --accent-glow: rgba(79, 140, 255, 0.24);
-    --accent-dark: #2f6fe4;
-    --accent-2: #4f8cff;
+    --accent: #70b8b0;
+    --accent-glow: rgba(112, 184, 176, 0.2);
+    --accent-dark: #4d9992;
+    --accent-2: #efb366;
 
     --green: #34d399;
     --green-glow: rgba(52, 211, 153, 0.15);
     --green-border: rgba(52, 211, 153, 0.35);
 
-    --border: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(79, 140, 255, 0.55);
+    --border: rgba(220, 236, 232, 0.13);
+    --border-hover: rgba(112, 184, 176, 0.62);
 
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --radius: 6px;
@@ -43,6 +43,8 @@ html {
 
 body {
     background-color: var(--bg-dark);
+    background-image: radial-gradient(circle at 50% -10%, rgba(112, 184, 176, 0.1), transparent 32rem),
+        linear-gradient(115deg, rgba(239, 179, 102, 0.035), transparent 35%, rgba(112, 184, 176, 0.04));
     color: var(--text-primary);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.7;
@@ -60,7 +62,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0.7rem 2rem;
-    background: var(--bg-dark);
+    background: rgba(12, 17, 23, 0.92);
+    backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--border);
 }
 
@@ -163,7 +166,8 @@ body {
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--border);
+    border: 3px solid rgba(112, 184, 176, 0.65);
+    box-shadow: 0 0 0 0.65rem rgba(112, 184, 176, 0.08), 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
     margin-bottom: 2rem;
     transition: var(--transition);
     filter: grayscale(0.15);
@@ -357,6 +361,24 @@ section h2::after {
 .project-list-item {
     text-decoration: none;
     color: inherit;
+    gap: 1rem;
+}
+
+.project-list-thumb {
+    width: 9rem;
+    height: 5.25rem;
+    flex: 0 0 auto;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg-dark);
+    transition: var(--transition);
+}
+
+.project-list-item:hover .project-list-thumb {
+    border-color: var(--border-hover);
+    transform: scale(1.02);
 }
 
 .project-list-title {
@@ -366,6 +388,11 @@ section h2::after {
     margin-bottom: 0.35rem;
     display: block;
     font-family: 'Outfit', sans-serif;
+}
+
+.project-list-item .cert-info {
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .project-list-desc {
@@ -388,6 +415,12 @@ section h2::after {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.75rem;
+    }
+
+    .project-list-thumb {
+        width: 100%;
+        height: 10rem;
+        object-position: center 18%;
     }
 
     .project-list-meta {
@@ -533,7 +566,7 @@ section h2::after {
 }
 
 .contact-cta:hover {
-    background: #7dd3fc;
+    background: var(--accent-2);
     transform: translateY(-2px);
 }
 
@@ -621,6 +654,27 @@ footer {
     color: var(--text-secondary);
     font-size: 1.05rem;
     margin-top: 0.75rem;
+}
+
+.project-figure {
+    margin: 0 0 2rem;
+    padding: 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.project-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.project-figure figcaption {
+    padding: 0.65rem 0.25rem 0.1rem;
+    color: var(--text-dim);
+    font-size: 0.8rem;
 }
 
 .page-content section {

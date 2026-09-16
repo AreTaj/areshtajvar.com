@@ -7,7 +7,6 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <link rel="stylesheet" href="../assets/css/index.css">
     <script src="../assets/js/translations.js"></script>
-    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/6.12.0/gradio.js"></script>
 
     <style>
         .demo-page-container {
@@ -53,12 +52,49 @@
             width: 100%;
         }
 
-        gradio-app {
-            height: 100%;
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto;
-            display: block;
+        .demo-launch-card {
+            width: min(42rem, calc(100% - 3rem));
+            padding: 3rem 2rem;
+            text-align: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+
+        .demo-launch-card img {
+            width: 4rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .demo-launch-card h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            margin-bottom: 1rem;
+        }
+
+        .demo-launch-card p {
+            max-width: 34rem;
+            margin: 0 auto 2rem;
+            color: var(--text-secondary);
+        }
+
+        .demo-launch-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.4rem;
+            border-radius: var(--radius);
+            background: var(--accent);
+            color: var(--bg-dark);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .demo-launch-button:hover {
+            background: var(--accent-2);
+            transform: translateY(-2px);
         }
 
         .demo-status-bar {
@@ -95,13 +131,18 @@
         </nav>
 
         <main class="demo-main">
-            <gradio-app src="https://aretaj-sd-land-use-explorer.hf.space"></gradio-app>
+            <section class="demo-launch-card">
+                <img src="../assets/img/logo.png" alt="">
+                <h1>San Diego Municipal Code Land Use Explorer</h1>
+                <p data-t="rag_demo_note">Experience the domain-adapted RAG pipeline in its hosted interactive interface.</p>
+                <a class="demo-launch-button" href="https://aretaj-sd-land-use-explorer.hf.space" target="_blank" rel="noopener noreferrer" data-t="launch_app">Open Interactive Demo ↗</a>
+            </section>
         </main>
 
         <div class="demo-status-bar">
             <div class="status-dot"></div>
             <p style="color: var(--text-secondary);" data-t="rag_demo_status">
-                <span style="color: var(--text-primary); font-weight: 600;">Note:</span> Hosted on Hugging Face Spaces. If app is sleeping, please click "Restart Space" and wait 1-2 minutes.
+                <span style="color: var(--text-primary); font-weight: 600;">Note:</span> The interactive demo opens in a new tab on Hugging Face Spaces.
             </p>
         </div>
     </div>
